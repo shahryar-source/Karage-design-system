@@ -9,7 +9,6 @@ function goTo(page) {
   const navEl = document.querySelector(`.nav-item[data-page="${page}"]`);
   if (navEl) navEl.classList.add('active');
 
-  // sync platform tabs when entering colors page
   if (page === 'colors') {
     const activeTab = document.querySelector('.ptab.active');
     if (activeTab) syncTab(activeTab.dataset.tab);
@@ -33,9 +32,8 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('sidebar').classList.toggle('open');
 });
 
-// ─── PLATFORM TABS (global) ───
+// ─── PLATFORM TABS ───
 function syncTab(tab) {
-  // Update all tab panes on the page
   document.querySelectorAll('.tab-pane').forEach(pane => {
     pane.classList.toggle('active', pane.dataset.tab === tab);
   });
@@ -49,7 +47,7 @@ document.querySelectorAll('.ptab').forEach(btn => {
   });
 });
 
-// ─── COPY CODE BLOCK ───
+// ─── COPY CODE ───
 function copyBlock(btn) {
   const code = btn.closest('.code-block').querySelector('code');
   if (!code) return;
@@ -61,10 +59,10 @@ function copyBlock(btn) {
   });
 }
 
-// ─── COPY SWATCH HEX ───
+// ─── COPY SWATCH ───
 function showToast(msg) {
   const toast = document.getElementById('copy-toast');
-  toast.textContent = msg;
+  document.getElementById('toast-msg').textContent = msg;
   toast.classList.add('show');
   clearTimeout(window._toastTimer);
   window._toastTimer = setTimeout(() => toast.classList.remove('show'), 2000);
@@ -74,13 +72,11 @@ document.querySelectorAll('.swatch, .sup-swatch').forEach(el => {
   el.addEventListener('click', () => {
     const hex = el.dataset.hex;
     if (!hex) return;
-    navigator.clipboard.writeText(hex).then(() => {
-      showToast('Copied ' + hex);
-    });
+    navigator.clipboard.writeText(hex).then(() => showToast('Copied ' + hex));
   });
 });
 
-// ─── CLOSE SIDEBAR ON OUTSIDE CLICK (MOBILE) ───
+// ─── CLOSE SIDEBAR ON OUTSIDE CLICK ───
 document.addEventListener('click', (e) => {
   const sidebar = document.getElementById('sidebar');
   const hamburger = document.getElementById('hamburger');

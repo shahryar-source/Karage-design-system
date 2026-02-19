@@ -6,951 +6,502 @@
   <title>Karage Design System</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- SIDEBAR NAV -->
+<!-- SIDEBAR -->
 <aside class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <div class="logo">
-      <span class="logo-mark">K</span>
-      <div>
-        <div class="logo-name">Karage</div>
-        <div class="logo-sub">Design System v1.0</div>
-      </div>
+  <div class="sidebar-logo">
+    <img src="karage-logo.png" alt="Karage" class="logo-img" />
+    <div class="logo-text">
+      <div class="logo-name">Karage</div>
+      <div class="logo-ver">Design System v1.0</div>
     </div>
   </div>
+
   <nav class="sidebar-nav">
-    <div class="nav-section">
-      <div class="nav-label">Foundation</div>
-      <a href="#colors" class="nav-item active" data-section="colors">Colors</a>
-      <a href="#typography" class="nav-item" data-section="typography">Typography</a>
-      <a href="#spacing" class="nav-item" data-section="spacing">Spacing</a>
-      <a href="#radius" class="nav-item" data-section="radius">Border Radius</a>
-      <a href="#elevation" class="nav-item" data-section="elevation">Elevation</a>
-    </div>
-    <div class="nav-section">
-      <div class="nav-label">Components</div>
-      <a href="#buttons" class="nav-item" data-section="buttons">Buttons</a>
-      <a href="#inputs" class="nav-item" data-section="inputs">Inputs</a>
-      <a href="#badges" class="nav-item" data-section="badges">Badges</a>
-      <a href="#alerts" class="nav-item" data-section="alerts">Alerts</a>
-      <a href="#toast" class="nav-item" data-section="toast">Toast</a>
-      <a href="#pagination" class="nav-item" data-section="pagination">Pagination</a>
-      <a href="#divider" class="nav-item" data-section="divider">Divider</a>
-      <a href="#indicators" class="nav-item" data-section="indicators">Indicators</a>
-      <a href="#skeleton" class="nav-item" data-section="skeleton">Skeleton</a>
-    </div>
+    <a href="#" class="nav-item active" data-page="home">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      Overview
+    </a>
+
+    <div class="nav-group-label">Foundation</div>
+
+    <a href="#" class="nav-item" data-page="colors">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 3C12 3 17 8 17 12C17 16 12 21 12 21"/><path d="M3 12H21"/></svg></span>
+      Color
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 7h16M4 12h10M4 17h13"/></svg></span>
+      Typography
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 12h16M4 6h16M4 18h10"/></svg></span>
+      Spacing
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="8"/></svg></span>
+      Border Radius
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="8" width="16" height="12" rx="2"/><rect x="7" y="4" width="10" height="6" rx="1" opacity="0.5"/></svg></span>
+      Elevation
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="M11 8h2a3 3 0 013 3v2"/></svg></span>
+      Icons
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <div class="nav-group-label">Components</div>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="9" width="18" height="6" rx="3"/></svg></span>
+      Buttons
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 12h3"/></svg></span>
+      Inputs
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="9" width="12" height="6" rx="3"/><circle cx="19" cy="9" r="3"/></svg></span>
+      Badges
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6z"/><path d="M8 11h8M8 15h5"/></svg></span>
+      Alerts
+      <span class="dev-pill">Dev</span>
+    </a>
+
+    <a href="#" class="nav-item nav-dev" data-page="dev">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="8" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="16" cy="12" r="2"/></svg></span>
+      Pagination
+      <span class="dev-pill">Dev</span>
+    </a>
   </nav>
-  <div class="sidebar-footer">
-    <div class="ds-badge">Figma Connected</div>
-  </div>
 </aside>
 
-<!-- MAIN CONTENT -->
-<main class="main">
+<!-- MAIN -->
+<main class="main" id="main">
 
-  <!-- TOP BAR -->
   <header class="topbar">
-    <button class="menu-toggle" id="menuToggle">☰</button>
-    <div class="breadcrumb" id="breadcrumb">Colors</div>
-    <div class="topbar-actions">
-      <button class="btn-copy-all" onclick="copyCSS()">Copy CSS Variables</button>
+    <button class="hamburger" id="hamburger">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <div class="topbar-right">
+      <span class="topbar-version">v1.0.0</span>
+      <div class="topbar-avatar">KD</div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero-section">
-    <div class="hero-label">DESIGN SYSTEM</div>
-    <h1 class="hero-title">Karage<br/><span class="accent">Components</span></h1>
-    <p class="hero-desc">A living, breathable design system. Every token, component, and pattern — ready to copy, import, and ship.</p>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num">100</span><span class="stat-lbl">Tokens</span></div>
-      <div class="stat"><span class="stat-num">54</span><span class="stat-lbl">Type Styles</span></div>
-      <div class="stat"><span class="stat-num">9+</span><span class="stat-lbl">Components</span></div>
-      <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Elevations</span></div>
-    </div>
-  </section>
+  <!-- ══════════ HOME ══════════ -->
+  <div class="page active" id="page-home">
+    <div class="page-inner">
+      <div class="page-header">
+        <h1 class="page-title">Design System Foundations</h1>
+        <p class="page-desc">Complete guide to understanding Karage's cross-platform design language — for Design, Frontend, Android, iOS & Backend teams.</p>
+      </div>
 
-  <!-- ═══════════════ COLORS ═══════════════ -->
-  <section class="ds-section" id="colors">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Colors</h2>
-        <p class="section-desc">60 color variables across 8 palettes. Primary brand is <strong>Green</strong>.</p>
+      <div class="cards-grid">
+
+        <div class="ds-card live" onclick="goTo('colors')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3C12 3 17 8 17 12C17 16 12 21 12 21"/><path d="M3 12H21"/></svg>
+          </div>
+          <div class="card-name">Color</div>
+          <div class="card-status live-status">Live ✓</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h10M4 17h13"/><rect x="2" y="2" width="20" height="20" rx="3"/></svg>
+          </div>
+          <div class="card-name">Typography</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3M21 9H3M21 15H3M21 21H3"/></svg>
+          </div>
+          <div class="card-name">Spacing</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="9"/></svg>
+          </div>
+          <div class="card-name">Border Radius</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="9" width="16" height="12" rx="2"/><rect x="7" y="5" width="10" height="7" rx="1" opacity="0.5"/></svg>
+          </div>
+          <div class="card-name">Elevation</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+          </div>
+          <div class="card-name">Icons</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="20" height="6" rx="3"/><path d="M12 9V6M12 15v3"/></svg>
+          </div>
+          <div class="card-name">Buttons</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 12h4"/></svg>
+          </div>
+          <div class="card-name">Inputs</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="12" height="6" rx="3"/><circle cx="19" cy="9" r="3"/></svg>
+          </div>
+          <div class="card-name">Badges</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v13a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/><path d="M8 11h8M8 15h5"/></svg>
+          </div>
+          <div class="card-name">Alerts</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.5"/><circle cx="12" cy="12" r="2.5"/><circle cx="18" cy="12" r="2.5"/></svg>
+          </div>
+          <div class="card-name">Pagination</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
+        <div class="ds-card dev-card" onclick="goTo('dev')">
+          <div class="card-icon-wrap">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+          <div class="card-name">More Soon</div>
+          <div class="card-status dev-status">Developing</div>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <h3 class="palette-label">Green — Primary</h3>
-    <div class="color-row">
-      <div class="swatch" style="--bg:#F5FFE1;--fg:#134F1A" data-name="Green primary/50" data-hex="#F5FFE1" data-var="--color-green-50"><div class="swatch-hex">#F5FFE1</div><div class="swatch-name">50</div></div>
-      <div class="swatch" style="--bg:#EFFFCD;--fg:#134F1A" data-name="Green primary/100" data-hex="#EFFFCD" data-var="--color-green-100"><div class="swatch-hex">#EFFFCD</div><div class="swatch-name">100</div></div>
-      <div class="swatch" style="--bg:#D3F6AD;--fg:#134F1A" data-name="Green primary/200" data-hex="#D3F6AD" data-var="--color-green-200"><div class="swatch-hex">#D3F6AD</div><div class="swatch-name">200</div></div>
-      <div class="swatch" style="--bg:#B6F174;--fg:#0D4213" data-name="Green primary/300" data-hex="#B6F174" data-var="--color-green-300"><div class="swatch-hex">#B6F174</div><div class="swatch-name">300</div></div>
-      <div class="swatch" style="--bg:#3F9444;--fg:#fff" data-name="Green primary/400" data-hex="#3F9444" data-var="--color-green-400"><div class="swatch-hex">#3F9444</div><div class="swatch-name">400</div></div>
-      <div class="swatch active-swatch" style="--bg:#134F1A;--fg:#B6F174" data-name="Green primary/500" data-hex="#134F1A" data-var="--color-green-500"><div class="swatch-hex">#134F1A</div><div class="swatch-name">500 ★</div></div>
-      <div class="swatch" style="--bg:#0D4213;--fg:#B6F174" data-name="Green primary/600" data-hex="#0D4213" data-var="--color-green-600"><div class="swatch-hex">#0D4213</div><div class="swatch-name">600</div></div>
-      <div class="swatch" style="--bg:#07310B;--fg:#D3F6AD" data-name="Green primary/700" data-hex="#07310B" data-var="--color-green-700"><div class="swatch-hex">#07310B</div><div class="swatch-name">700</div></div>
-    </div>
-
-    <h3 class="palette-label">Gray — Text</h3>
-    <div class="color-row">
-      <div class="swatch" style="--bg:#F6F6F6;--fg:#333" data-hex="#F6F6F6" data-var="--color-gray-50"><div class="swatch-hex">#F6F6F6</div><div class="swatch-name">50</div></div>
-      <div class="swatch" style="--bg:#EEEEEE;--fg:#333" data-hex="#EEEEEE" data-var="--color-gray-100"><div class="swatch-hex">#EEEEEE</div><div class="swatch-name">100</div></div>
-      <div class="swatch" style="--bg:#E2E2E2;--fg:#333" data-hex="#E2E2E2" data-var="--color-gray-200"><div class="swatch-hex">#E2E2E2</div><div class="swatch-name">200</div></div>
-      <div class="swatch" style="--bg:#CBCBCB;--fg:#333" data-hex="#CBCBCB" data-var="--color-gray-300"><div class="swatch-hex">#CBCBCB</div><div class="swatch-name">300</div></div>
-      <div class="swatch" style="--bg:#AFAFAF;--fg:#fff" data-hex="#AFAFAF" data-var="--color-gray-400"><div class="swatch-hex">#AFAFAF</div><div class="swatch-name">400</div></div>
-      <div class="swatch" style="--bg:#757575;--fg:#fff" data-hex="#757575" data-var="--color-gray-500"><div class="swatch-hex">#757575</div><div class="swatch-name">500</div></div>
-      <div class="swatch" style="--bg:#545454;--fg:#fff" data-hex="#545454" data-var="--color-gray-600"><div class="swatch-hex">#545454</div><div class="swatch-name">600</div></div>
-      <div class="swatch" style="--bg:#333333;--fg:#fff" data-hex="#333333" data-var="--color-gray-700"><div class="swatch-hex">#333333</div><div class="swatch-name">700</div></div>
-    </div>
-
-    <h3 class="palette-label">Red — Alert</h3>
-    <div class="color-row">
-      <div class="swatch" style="--bg:#FEF3F2;--fg:#B42318" data-hex="#FEF3F2" data-var="--color-red-50"><div class="swatch-hex">#FEF3F2</div><div class="swatch-name">50</div></div>
-      <div class="swatch" style="--bg:#FEE4E2;--fg:#B42318" data-hex="#FEE4E2" data-var="--color-red-100"><div class="swatch-hex">#FEE4E2</div><div class="swatch-name">100</div></div>
-      <div class="swatch" style="--bg:#FECDCA;--fg:#B42318" data-hex="#FECDCA" data-var="--color-red-200"><div class="swatch-hex">#FECDCA</div><div class="swatch-name">200</div></div>
-      <div class="swatch" style="--bg:#FDA29B;--fg:#fff" data-hex="#FDA29B" data-var="--color-red-300"><div class="swatch-hex">#FDA29B</div><div class="swatch-name">300</div></div>
-      <div class="swatch" style="--bg:#F97066;--fg:#fff" data-hex="#F97066" data-var="--color-red-400"><div class="swatch-hex">#F97066</div><div class="swatch-name">400</div></div>
-      <div class="swatch" style="--bg:#F04438;--fg:#fff" data-hex="#F04438" data-var="--color-red-500"><div class="swatch-hex">#F04438</div><div class="swatch-name">500</div></div>
-      <div class="swatch" style="--bg:#D92D20;--fg:#fff" data-hex="#D92D20" data-var="--color-red-600"><div class="swatch-hex">#D92D20</div><div class="swatch-name">600</div></div>
-      <div class="swatch" style="--bg:#B42318;--fg:#fff" data-hex="#B42318" data-var="--color-red-700"><div class="swatch-hex">#B42318</div><div class="swatch-name">700</div></div>
-    </div>
-
-    <h3 class="palette-label">Supportive Palettes</h3>
-    <div class="supportive-grid">
-      <div class="supportive-col">
-        <div class="sup-label">Seance</div>
-        <div class="sup-swatch" style="--bg:#F8EEFE"><div class="sup-hex">#F8EEFE</div><span>50</span></div>
-        <div class="sup-swatch" style="--bg:#EAD2FB"><div class="sup-hex">#EAD2FB</div><span>100</span></div>
-        <div class="sup-swatch" style="--bg:#E1BFF9"><div class="sup-hex">#E1BFF9</div><span>200</span></div>
-        <div class="sup-swatch" style="--bg:#D6A5F7"><div class="sup-hex">#D6A5F7</div><span>300</span></div>
-        <div class="sup-swatch" style="--bg:#C47FF3"><div class="sup-hex">#C47FF3</div><span>400</span></div>
-        <div class="sup-swatch" style="--bg:#752A9F;color:#fff"><div class="sup-hex">#752A9F</div><span>500</span></div>
-      </div>
-      <div class="supportive-col">
-        <div class="sup-label">Prairie Sand</div>
-        <div class="sup-swatch" style="--bg:#FFE9E2"><div class="sup-hex">#FFE9E2</div><span>50</span></div>
-        <div class="sup-swatch" style="--bg:#FECABC"><div class="sup-hex">#FECABC</div><span>100</span></div>
-        <div class="sup-swatch" style="--bg:#FEB49F"><div class="sup-hex">#FEB49F</div><span>200</span></div>
-        <div class="sup-swatch" style="--bg:#FE9679"><div class="sup-hex">#FE9679</div><span>300</span></div>
-        <div class="sup-swatch" style="--bg:#FD693F"><div class="sup-hex">#FD693F</div><span>400</span></div>
-        <div class="sup-swatch" style="--bg:#993C27;color:#fff"><div class="sup-hex">#993C27</div><span>500</span></div>
-      </div>
-      <div class="supportive-col">
-        <div class="sup-label">Corn Harvest</div>
-        <div class="sup-swatch" style="--bg:#FEF3DD"><div class="sup-hex">#FEF3DD</div><span>50</span></div>
-        <div class="sup-swatch" style="--bg:#FDE2B0"><div class="sup-hex">#FDE2B0</div><span>100</span></div>
-        <div class="sup-swatch" style="--bg:#FBD58D"><div class="sup-hex">#FBD58D</div><span>200</span></div>
-        <div class="sup-swatch" style="--bg:#FAC560"><div class="sup-hex">#FAC560</div><span>300</span></div>
-        <div class="sup-swatch" style="--bg:#F8AC1C"><div class="sup-hex">#F8AC1C</div><span>400</span></div>
-        <div class="sup-swatch" style="--bg:#8E6A0C;color:#fff"><div class="sup-hex">#8E6A0C</div><span>500</span></div>
-      </div>
-      <div class="supportive-col">
-        <div class="sup-label">Chambray</div>
-        <div class="sup-swatch" style="--bg:#EAEFFF"><div class="sup-hex">#EAEFFF</div><span>50</span></div>
-        <div class="sup-swatch" style="--bg:#DBE5FF"><div class="sup-hex">#DBE5FF</div><span>100</span></div>
-        <div class="sup-swatch" style="--bg:#B8CBFF"><div class="sup-hex">#B8CBFF</div><span>200</span></div>
-        <div class="sup-swatch" style="--bg:#7196FE;color:#fff"><div class="sup-hex">#7196FE</div><span>300</span></div>
-        <div class="sup-swatch" style="--bg:#3E6EFD;color:#fff"><div class="sup-hex">#3E6EFD</div><span>400</span></div>
-        <div class="sup-swatch" style="--bg:#1A3FBF;color:#fff"><div class="sup-hex">#1A3FBF</div><span>500</span></div>
-      </div>
-      <div class="supportive-col">
-        <div class="sup-label">Accents</div>
-        <div class="sup-swatch" style="--bg:#FD693F"><div class="sup-hex">#FD693F</div><span>Orange</span></div>
-        <div class="sup-swatch" style="--bg:#7196FE;color:#fff"><div class="sup-hex">#7196FE</div><span>Cornflower</span></div>
-        <div class="sup-swatch" style="--bg:#A49D93"><div class="sup-hex">#A49D93</div><span>Zorba</span></div>
-        <div class="sup-swatch" style="--bg:#141414;color:#fff"><div class="sup-hex">#141414</div><span>Black</span></div>
-        <div class="sup-swatch" style="--bg:#FFFFFF;border:1px solid #E2E2E2"><div class="sup-hex">#FFFFFF</div><span>White</span></div>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">CSS Variables <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>:root {
-  /* Green - Primary */
-  --color-green-50: #F5FFE1;
-  --color-green-100: #EFFFCD;
-  --color-green-200: #D3F6AD;
-  --color-green-300: #B6F174;
-  --color-green-400: #3F9444;
-  --color-green-500: #134F1A;
-  --color-green-600: #0D4213;
-  --color-green-700: #07310B;
-
-  /* Gray - Text */
-  --color-gray-50: #F6F6F6;
-  --color-gray-100: #EEEEEE;
-  --color-gray-200: #E2E2E2;
-  --color-gray-300: #CBCBCB;
-  --color-gray-400: #AFAFAF;
-  --color-gray-500: #757575;
-  --color-gray-600: #545454;
-  --color-gray-700: #333333;
-
-  /* Base */
-  --color-black: #141414;
-  --color-white: #FFFFFF;
-
-  /* Red - Alert */
-  --color-red-50: #FEF3F2;
-  --color-red-100: #FEE4E2;
-  --color-red-200: #FECDCA;
-  --color-red-300: #FDA29B;
-  --color-red-400: #F97066;
-  --color-red-500: #F04438;
-  --color-red-600: #D92D20;
-  --color-red-700: #B42318;
-
-  /* Supportive - Accents */
-  --color-orange: #FD693F;
-  --color-cornflower: #7196FE;
-  --color-zorba: #A49D93;
-}</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ TYPOGRAPHY ═══════════════ -->
-  <section class="ds-section" id="typography">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Typography</h2>
-        <p class="section-desc">54 text styles across 5 levels. Display → Headline → Title → Body → Label.</p>
-      </div>
-    </div>
-
-    <div class="type-showcase">
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Display</span><span class="type-info">D1 Bold · 72px</span></div>
-        <div class="type-preview" style="font-size:64px;font-weight:700;line-height:1.1;letter-spacing:-1px">Karage</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Display</span><span class="type-info">D2 Semibold · 56px</span></div>
-        <div class="type-preview" style="font-size:48px;font-weight:600;line-height:1.15">Design System</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Headline</span><span class="type-info">H1 Bold · 40px</span></div>
-        <div class="type-preview" style="font-size:36px;font-weight:700;line-height:1.2">Foundation & Components</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Headline</span><span class="type-info">H2 Semibold · 32px</span></div>
-        <div class="type-preview" style="font-size:28px;font-weight:600;line-height:1.25">Color Palettes &amp; Tokens</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Headline</span><span class="type-info">H3 Medium · 24px</span></div>
-        <div class="type-preview" style="font-size:22px;font-weight:500;line-height:1.3">Typography & Spacing Scale</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Headline</span><span class="type-info">H4 Regular · 20px</span></div>
-        <div class="type-preview" style="font-size:20px;font-weight:400;line-height:1.35">Button, Input, and Form Elements</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Title</span><span class="type-info">L1 Semibold · 18px</span></div>
-        <div class="type-preview" style="font-size:18px;font-weight:600;line-height:1.4">Component Documentation</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Title</span><span class="type-info">L2 Medium · 16px</span></div>
-        <div class="type-preview" style="font-size:16px;font-weight:500;line-height:1.45">Alert, Toast, and Notification Variants</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Body</span><span class="type-info">L1 Regular · 16px</span></div>
-        <div class="type-preview" style="font-size:16px;font-weight:400;line-height:1.6;color:#545454">A design system unifies teams, accelerates development, and ensures a coherent user experience across every product surface.</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Body</span><span class="type-info">L2 Regular · 14px</span></div>
-        <div class="type-preview" style="font-size:14px;font-weight:400;line-height:1.6;color:#545454">This system is built on a foundation of semantic tokens, accessible color palettes, and a consistent spacing scale.</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Label</span><span class="type-info">L1 Medium · 13px</span></div>
-        <div class="type-preview" style="font-size:13px;font-weight:500;line-height:1.5;letter-spacing:0.2px">REQUIRED FIELD</div>
-      </div>
-      <div class="type-row">
-        <div class="type-meta"><span class="type-tag">Label</span><span class="type-info">L3 Regular · 11px</span></div>
-        <div class="type-preview" style="font-size:11px;font-weight:400;line-height:1.5;letter-spacing:0.3px;text-transform:uppercase">CAPTION TEXT</div>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>/* Display */
-.text-d1-bold     { font-size: 64px; font-weight: 700; line-height: 1.1; letter-spacing: -1px; }
-.text-d1-semibold { font-size: 64px; font-weight: 600; line-height: 1.1; }
-.text-d2-bold     { font-size: 48px; font-weight: 700; line-height: 1.15; }
-.text-d2-semibold { font-size: 48px; font-weight: 600; line-height: 1.15; }
-
-/* Headline */
-.text-h1-bold     { font-size: 36px; font-weight: 700; line-height: 1.2; }
-.text-h2-semibold { font-size: 28px; font-weight: 600; line-height: 1.25; }
-.text-h3-medium   { font-size: 22px; font-weight: 500; line-height: 1.3; }
-.text-h4-regular  { font-size: 20px; font-weight: 400; line-height: 1.35; }
-
-/* Title */
-.text-title-l1    { font-size: 18px; font-weight: 600; line-height: 1.4; }
-.text-title-l2    { font-size: 16px; font-weight: 500; line-height: 1.45; }
-.text-title-l3    { font-size: 15px; font-weight: 500; line-height: 1.5; }
-.text-title-l4    { font-size: 14px; font-weight: 400; line-height: 1.5; }
-
-/* Body */
-.text-body-l1     { font-size: 16px; font-weight: 400; line-height: 1.6; }
-.text-body-l2     { font-size: 14px; font-weight: 400; line-height: 1.6; }
-.text-body-l3     { font-size: 13px; font-weight: 400; line-height: 1.55; }
-
-/* Label */
-.text-label-l1    { font-size: 13px; font-weight: 500; line-height: 1.5; letter-spacing: 0.2px; }
-.text-label-l2    { font-size: 12px; font-weight: 500; line-height: 1.5; letter-spacing: 0.2px; }
-.text-label-l3    { font-size: 11px; font-weight: 400; line-height: 1.5; letter-spacing: 0.3px; }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ SPACING ═══════════════ -->
-  <section class="ds-section" id="spacing">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Spacing Scale</h2>
-        <p class="section-desc">26 spacing tokens across 5 tiers: Xs → Sm → Md → Lg → Xl → XXl.</p>
-      </div>
-    </div>
-    <div class="spacing-table">
-      <div class="sp-head"><span>Token</span><span>Name</span><span>Value</span><span>Visual</span></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xs-1</span><span>Xs/1</span><span class="sp-val">1px</span><div class="sp-bar" style="width:1px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xs-2</span><span>Xs/2</span><span class="sp-val">2px</span><div class="sp-bar" style="width:2px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-sm-4</span><span>Sm/4</span><span class="sp-val">4px</span><div class="sp-bar" style="width:4px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-sm-6</span><span>Sm/6</span><span class="sp-val">6px</span><div class="sp-bar" style="width:6px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-sm-8</span><span>Sm/8</span><span class="sp-val">8px</span><div class="sp-bar" style="width:8px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-sm-10</span><span>Sm/10</span><span class="sp-val">10px</span><div class="sp-bar" style="width:10px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-sm-12</span><span>Sm/12</span><span class="sp-val">12px</span><div class="sp-bar" style="width:12px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-md-14</span><span>Md/14</span><span class="sp-val">14px</span><div class="sp-bar" style="width:14px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-md-16</span><span>Md/16</span><span class="sp-val">16px</span><div class="sp-bar" style="width:16px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-md-20</span><span>Md/20</span><span class="sp-val">20px</span><div class="sp-bar" style="width:20px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-md-24</span><span>Md/24</span><span class="sp-val">24px</span><div class="sp-bar" style="width:24px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-lg-28</span><span>Lg/28</span><span class="sp-val">28px</span><div class="sp-bar" style="width:28px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-lg-32</span><span>Lg/32</span><span class="sp-val">32px</span><div class="sp-bar" style="width:32px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-lg-36</span><span>Lg/36</span><span class="sp-val">36px</span><div class="sp-bar" style="width:36px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-lg-40</span><span>Lg/40</span><span class="sp-val">40px</span><div class="sp-bar" style="width:40px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-lg-48</span><span>Lg/48</span><span class="sp-val">48px</span><div class="sp-bar" style="width:48px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xl-56</span><span>Xl/56</span><span class="sp-val">56px</span><div class="sp-bar" style="width:56px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xl-64</span><span>Xl/64</span><span class="sp-val">64px</span><div class="sp-bar" style="width:64px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xl-80</span><span>Xl/80</span><span class="sp-val">80px</span><div class="sp-bar" style="width:80px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xl-96</span><span>Xl/96</span><span class="sp-val">96px</span><div class="sp-bar" style="width:96px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xxl-112</span><span>XXl/112</span><span class="sp-val">112px</span><div class="sp-bar" style="width:112px"></div></div>
-      <div class="sp-row"><span class="sp-var">--spacing-xxl-128</span><span>XXl/128</span><span class="sp-val">128px</span><div class="sp-bar" style="width:128px"></div></div>
-    </div>
-    <div class="code-block">
-      <div class="code-label">CSS Variables <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>:root {
-  --spacing-xs-1:    1px;
-  --spacing-xs-2:    2px;
-  --spacing-sm-4:    4px;
-  --spacing-sm-6:    6px;
-  --spacing-sm-8:    8px;
-  --spacing-sm-10:  10px;
-  --spacing-sm-12:  12px;
-  --spacing-md-14:  14px;
-  --spacing-md-16:  16px;
-  --spacing-md-20:  20px;
-  --spacing-md-24:  24px;
-  --spacing-lg-28:  28px;
-  --spacing-lg-32:  32px;
-  --spacing-lg-36:  36px;
-  --spacing-lg-40:  40px;
-  --spacing-lg-44:  44px;
-  --spacing-lg-48:  48px;
-  --spacing-xl-56:  56px;
-  --spacing-xl-64:  64px;
-  --spacing-xl-80:  80px;
-  --spacing-xl-96:  96px;
-  --spacing-xxl-112: 112px;
-  --spacing-xxl-128: 128px;
-  --spacing-xxl-144: 144px;
-  --spacing-xxl-160: 160px;
-}</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ RADIUS ═══════════════ -->
-  <section class="ds-section" id="radius">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Border Radius</h2>
-        <p class="section-desc">14 radius tokens for consistent rounding across the design system.</p>
-      </div>
-    </div>
-    <div class="radius-grid">
-      <div class="radius-card"><div class="radius-box" style="border-radius:4px"></div><div class="radius-name">Sm/4</div><div class="radius-val">4px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:6px"></div><div class="radius-name">Sm/6</div><div class="radius-val">6px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:8px"></div><div class="radius-name">Md/8</div><div class="radius-val">8px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:10px"></div><div class="radius-name">Md/10</div><div class="radius-val">10px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:12px"></div><div class="radius-name">Md/12</div><div class="radius-val">12px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:14px"></div><div class="radius-name">Md/14</div><div class="radius-val">14px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:16px"></div><div class="radius-name">Lg/16</div><div class="radius-val">16px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:18px"></div><div class="radius-name">Lg/18</div><div class="radius-val">18px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:20px"></div><div class="radius-name">Xl/20</div><div class="radius-val">20px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:22px"></div><div class="radius-name">Xl/22</div><div class="radius-val">22px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:24px"></div><div class="radius-name">XXl/24</div><div class="radius-val">24px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:28px"></div><div class="radius-name">XXl/28</div><div class="radius-val">28px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:32px"></div><div class="radius-name">XXl/32</div><div class="radius-val">32px</div></div>
-      <div class="radius-card"><div class="radius-box" style="border-radius:9999px"></div><div class="radius-name">XXl/Full</div><div class="radius-val">9999px</div></div>
-    </div>
-    <div class="code-block">
-      <div class="code-label">CSS Variables <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>:root {
-  --radius-sm-4:   4px;
-  --radius-sm-6:   6px;
-  --radius-md-8:   8px;
-  --radius-md-10:  10px;
-  --radius-md-12:  12px;
-  --radius-md-14:  14px;
-  --radius-lg-16:  16px;
-  --radius-lg-18:  18px;
-  --radius-xl-20:  20px;
-  --radius-xl-22:  22px;
-  --radius-xxl-24: 24px;
-  --radius-xxl-28: 28px;
-  --radius-xxl-32: 32px;
-  --radius-full:   9999px;
-}</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ ELEVATION ═══════════════ -->
-  <section class="ds-section" id="elevation">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Elevation</h2>
-        <p class="section-desc">3 shadow levels — Low, Mid, and High raised surfaces.</p>
-      </div>
-    </div>
-    <div class="elevation-grid">
-      <div class="elev-card" style="box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.08)">
-        <div class="elev-name">Low Raised</div>
-        <div class="elev-use">Cards, panels, subtle lift</div>
-        <div class="elev-code">box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 1px 3px rgba(0,0,0,.08)</div>
-      </div>
-      <div class="elev-card" style="box-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.06)">
-        <div class="elev-name">Mid Raised</div>
-        <div class="elev-use">Dropdowns, popovers, modals</div>
-        <div class="elev-code">box-shadow: 0 4px 8px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.06)</div>
-      </div>
-      <div class="elev-card" style="box-shadow: 0 16px 40px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.08)">
-        <div class="elev-name">High Raised</div>
-        <div class="elev-use">Dialogs, floating panels, toasts</div>
-        <div class="elev-code">box-shadow: 0 16px 40px rgba(0,0,0,.12), 0 8px 16px rgba(0,0,0,.08)</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ BUTTONS ═══════════════ -->
-  <section class="ds-section" id="buttons">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Buttons & Actions</h2>
-        <p class="section-desc">Primary, secondary, ghost, danger — all sizes. Interactive hover states.</p>
-      </div>
-    </div>
-
-    <h3 class="subsection-label">Variants</h3>
-    <div class="comp-row wrap">
-      <button class="k-btn k-btn-primary">Primary</button>
-      <button class="k-btn k-btn-secondary">Secondary</button>
-      <button class="k-btn k-btn-outline">Outline</button>
-      <button class="k-btn k-btn-ghost">Ghost</button>
-      <button class="k-btn k-btn-danger">Danger</button>
-      <button class="k-btn k-btn-primary" disabled>Disabled</button>
-    </div>
-
-    <h3 class="subsection-label">Sizes</h3>
-    <div class="comp-row wrap align-center">
-      <button class="k-btn k-btn-primary k-btn-xs">XSmall</button>
-      <button class="k-btn k-btn-primary k-btn-sm">Small</button>
-      <button class="k-btn k-btn-primary">Default</button>
-      <button class="k-btn k-btn-primary k-btn-lg">Large</button>
-      <button class="k-btn k-btn-primary k-btn-xl">XLarge</button>
-    </div>
-
-    <h3 class="subsection-label">With Icons</h3>
-    <div class="comp-row wrap">
-      <button class="k-btn k-btn-primary"><span class="icon">+</span> Add Item</button>
-      <button class="k-btn k-btn-secondary">Export <span class="icon">↗</span></button>
-      <button class="k-btn k-btn-outline"><span class="icon">⟳</span> Refresh</button>
-      <button class="k-btn k-btn-danger"><span class="icon">✕</span> Delete</button>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;!-- Buttons --&gt;
-&lt;button class="k-btn k-btn-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="k-btn k-btn-secondary"&gt;Secondary&lt;/button&gt;
-&lt;button class="k-btn k-btn-outline"&gt;Outline&lt;/button&gt;
-&lt;button class="k-btn k-btn-ghost"&gt;Ghost&lt;/button&gt;
-&lt;button class="k-btn k-btn-danger"&gt;Danger&lt;/button&gt;
-
-/* CSS */
-.k-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 10px 20px; border-radius: var(--radius-md-8);
-  font-size: 14px; font-weight: 600; cursor: pointer;
-  border: 1.5px solid transparent; transition: all 0.15s ease;
-}
-.k-btn-primary {
-  background: var(--color-green-500);
-  color: var(--color-white);
-}
-.k-btn-primary:hover { background: var(--color-green-600); }
-.k-btn-secondary {
-  background: var(--color-green-50);
-  color: var(--color-green-500);
-  border-color: var(--color-green-200);
-}
-.k-btn-outline {
-  background: transparent;
-  color: var(--color-gray-700);
-  border-color: var(--color-gray-300);
-}
-.k-btn-ghost {
-  background: transparent;
-  color: var(--color-gray-600);
-}
-.k-btn-ghost:hover { background: var(--color-gray-50); }
-.k-btn-danger {
-  background: var(--color-red-500);
-  color: var(--color-white);
-}
-.k-btn:disabled { opacity: 0.4; cursor: not-allowed; }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ INPUTS ═══════════════ -->
-  <section class="ds-section" id="inputs">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Input Fields</h2>
-        <p class="section-desc">Text input, textarea — with label, helper, error, and success states.</p>
-      </div>
-    </div>
-
-    <div class="inputs-grid">
-      <div class="input-group">
-        <label class="k-label">Default Input</label>
-        <input class="k-input" type="text" placeholder="Enter your name..." />
-        <span class="k-helper">This is helper text</span>
-      </div>
-      <div class="input-group">
-        <label class="k-label">Focus State</label>
-        <input class="k-input k-input-focus" type="text" placeholder="Active / focused..." />
-        <span class="k-helper">Click to focus</span>
-      </div>
-      <div class="input-group">
-        <label class="k-label">Error State</label>
-        <input class="k-input k-input-error" type="text" value="invalid@" />
-        <span class="k-helper k-helper-error">⚠ Please enter a valid email</span>
-      </div>
-      <div class="input-group">
-        <label class="k-label">Success State</label>
-        <input class="k-input k-input-success" type="text" value="john@example.com" />
-        <span class="k-helper k-helper-success">✓ Looks good!</span>
-      </div>
-      <div class="input-group">
-        <label class="k-label">Disabled</label>
-        <input class="k-input" type="text" value="Disabled input" disabled />
-      </div>
-      <div class="input-group" style="grid-column:1/-1">
-        <label class="k-label">Textarea</label>
-        <textarea class="k-input k-textarea" placeholder="Write something..."></textarea>
-        <span class="k-helper">Max 500 characters</span>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;div class="input-group"&gt;
-  &lt;label class="k-label"&gt;Label&lt;/label&gt;
-  &lt;input class="k-input" type="text" placeholder="Placeholder..." /&gt;
-  &lt;span class="k-helper"&gt;Helper text&lt;/span&gt;
-&lt;/div&gt;
-
-/* CSS */
-.k-label {
-  display: block; margin-bottom: 6px;
-  font-size: 13px; font-weight: 500; color: var(--color-gray-700);
-}
-.k-input {
-  width: 100%; padding: 10px 14px;
-  border: 1.5px solid var(--color-gray-200);
-  border-radius: var(--radius-md-8);
-  font-size: 14px; color: var(--color-gray-700);
-  background: var(--color-white);
-  transition: border 0.15s, box-shadow 0.15s;
-  outline: none;
-}
-.k-input:focus {
-  border-color: var(--color-green-400);
-  box-shadow: 0 0 0 3px rgba(63,148,68,0.12);
-}
-.k-input-error { border-color: var(--color-red-400); }
-.k-input-error:focus { box-shadow: 0 0 0 3px rgba(240,68,56,0.12); }
-.k-input-success { border-color: #3F9444; }
-.k-helper { display: block; margin-top: 4px; font-size: 12px; color: var(--color-gray-500); }
-.k-helper-error { color: var(--color-red-500); }
-.k-helper-success { color: var(--color-green-400); }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ BADGES ═══════════════ -->
-  <section class="ds-section" id="badges">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Badges & Counters</h2>
-        <p class="section-desc">Status badges with intent variants — success, warning, error, info, neutral.</p>
-      </div>
-    </div>
-
-    <h3 class="subsection-label">Badges</h3>
-    <div class="comp-row wrap">
-      <span class="k-badge k-badge-success">Success</span>
-      <span class="k-badge k-badge-warning">Warning</span>
-      <span class="k-badge k-badge-error">Error</span>
-      <span class="k-badge k-badge-info">Info</span>
-      <span class="k-badge k-badge-neutral">Neutral</span>
-      <span class="k-badge k-badge-purple">Purple</span>
-    </div>
-
-    <h3 class="subsection-label">With Dot Indicator</h3>
-    <div class="comp-row wrap">
-      <span class="k-badge k-badge-success"><span class="badge-dot"></span>Active</span>
-      <span class="k-badge k-badge-warning"><span class="badge-dot"></span>Pending</span>
-      <span class="k-badge k-badge-error"><span class="badge-dot"></span>Failed</span>
-      <span class="k-badge k-badge-neutral"><span class="badge-dot"></span>Inactive</span>
-    </div>
-
-    <h3 class="subsection-label">Counters</h3>
-    <div class="comp-row wrap">
-      <span class="k-counter k-counter-primary">3</span>
-      <span class="k-counter k-counter-neutral">12</span>
-      <span class="k-counter k-counter-error">99+</span>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;span class="k-badge k-badge-success"&gt;Success&lt;/span&gt;
-&lt;span class="k-badge k-badge-error"&gt;&lt;span class="badge-dot"&gt;&lt;/span&gt;Error&lt;/span&gt;
-&lt;span class="k-counter k-counter-primary"&gt;3&lt;/span&gt;
-
-/* CSS */
-.k-badge {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 2px 10px; border-radius: var(--radius-full);
-  font-size: 12px; font-weight: 500; line-height: 1.6;
-}
-.k-badge-success { background: #EFFFCD; color: #134F1A; }
-.k-badge-warning { background: #FEF3DD; color: #8E6A0C; }
-.k-badge-error   { background: #FEF3F2; color: #D92D20; }
-.k-badge-info    { background: #EAEFFF; color: #1A3FBF; }
-.k-badge-neutral { background: #F6F6F6; color: #545454; }
-.k-badge-purple  { background: #F8EEFE; color: #752A9F; }
-.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-
-.k-counter {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-width: 20px; height: 20px; padding: 0 6px;
-  border-radius: var(--radius-full);
-  font-size: 11px; font-weight: 600;
-}
-.k-counter-primary { background: var(--color-green-500); color: #fff; }
-.k-counter-error   { background: var(--color-red-500); color: #fff; }
-.k-counter-neutral { background: var(--color-gray-200); color: var(--color-gray-700); }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ ALERTS ═══════════════ -->
-  <section class="ds-section" id="alerts">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Alerts</h2>
-        <p class="section-desc">Inline alerts with icons — for system feedback and user guidance.</p>
-      </div>
-    </div>
-
-    <div class="alerts-stack">
-      <div class="k-alert k-alert-success">
-        <span class="alert-icon">✓</span>
-        <div><strong>Success!</strong> Your changes have been saved successfully.</div>
-        <button class="alert-close">✕</button>
-      </div>
-      <div class="k-alert k-alert-warning">
-        <span class="alert-icon">⚠</span>
-        <div><strong>Warning.</strong> Your subscription expires in 3 days.</div>
-        <button class="alert-close">✕</button>
-      </div>
-      <div class="k-alert k-alert-error">
-        <span class="alert-icon">✕</span>
-        <div><strong>Error!</strong> Something went wrong. Please try again.</div>
-        <button class="alert-close">✕</button>
-      </div>
-      <div class="k-alert k-alert-info">
-        <span class="alert-icon">ℹ</span>
-        <div><strong>Info.</strong> A new version of the app is available.</div>
-        <button class="alert-close">✕</button>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;div class="k-alert k-alert-success"&gt;
-  &lt;span class="alert-icon"&gt;✓&lt;/span&gt;
-  &lt;div&gt;&lt;strong&gt;Success!&lt;/strong&gt; Message here.&lt;/div&gt;
-  &lt;button class="alert-close"&gt;✕&lt;/button&gt;
-&lt;/div&gt;
-
-/* CSS */
-.k-alert {
-  display: flex; align-items: flex-start; gap: 12px;
-  padding: 14px 16px; border-radius: var(--radius-md-10);
-  border: 1.5px solid transparent; font-size: 14px;
-}
-.k-alert-success { background: #EFFFCD; border-color: #B6F174; color: #134F1A; }
-.k-alert-warning { background: #FEF3DD; border-color: #FAC560; color: #8E6A0C; }
-.k-alert-error   { background: #FEF3F2; border-color: #FDA29B; color: #D92D20; }
-.k-alert-info    { background: #EAEFFF; border-color: #B8CBFF; color: #1A3FBF; }
-.alert-icon { font-weight: 700; flex-shrink: 0; }
-.alert-close {
-  margin-left: auto; background: none; border: none;
-  cursor: pointer; opacity: 0.5; font-size: 12px;
-}
-.alert-close:hover { opacity: 1; }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ TOAST ═══════════════ -->
-  <section class="ds-section" id="toast">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Toast Notifications</h2>
-        <p class="section-desc">Floating toasts — positioned top-right. Click the buttons to trigger them.</p>
-      </div>
-    </div>
-
-    <div class="comp-row wrap">
-      <button class="k-btn k-btn-primary" onclick="showToast('success','✓','Changes saved successfully!')">Success Toast</button>
-      <button class="k-btn k-btn-secondary" onclick="showToast('warning','⚠','Session expires soon')">Warning Toast</button>
-      <button class="k-btn k-btn-outline" onclick="showToast('info','ℹ','New update available')">Info Toast</button>
-      <button class="k-btn k-btn-danger" onclick="showToast('error','✕','Action failed. Retry?')">Error Toast</button>
-    </div>
-
-    <div class="code-block">
-      <div class="code-label">JS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>function showToast(type, icon, message) {
-  const toast = document.createElement('div');
-  toast.className = `k-toast k-toast-${type}`;
-  toast.innerHTML = `&lt;span&gt;${icon}&lt;/span&gt;&lt;span&gt;${message}&lt;/span&gt;`;
-  document.getElementById('toast-container').appendChild(toast);
-  setTimeout(() => toast.remove(), 3000);
-}
-
-/* CSS */
-#toast-container {
-  position: fixed; top: 20px; right: 20px; z-index: 9999;
-  display: flex; flex-direction: column; gap: 10px;
-}
-.k-toast {
-  display: flex; align-items: center; gap: 10px;
-  padding: 12px 18px; border-radius: var(--radius-md-10);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  font-size: 14px; font-weight: 500;
-  animation: slideIn 0.25s ease;
-}
-.k-toast-success { background: #134F1A; color: #B6F174; }
-.k-toast-warning { background: #8E6A0C; color: #FDE2B0; }
-.k-toast-error   { background: #D92D20; color: #FEE4E2; }
-.k-toast-info    { background: #1A3FBF; color: #DBE5FF; }
-@keyframes slideIn {
-  from { transform: translateX(40px); opacity: 0; }
-  to   { transform: translateX(0); opacity: 1; }
-}</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ PAGINATION ═══════════════ -->
-  <section class="ds-section" id="pagination">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Pagination</h2>
-        <p class="section-desc">Paginator with ellipsis, prev/next controls.</p>
-      </div>
-    </div>
-    <div class="k-pagination">
-      <button class="page-btn page-nav">← Prev</button>
-      <button class="page-btn">1</button>
-      <button class="page-btn page-active">2</button>
-      <button class="page-btn">3</button>
-      <span class="page-ellipsis">…</span>
-      <button class="page-btn">8</button>
-      <button class="page-btn">9</button>
-      <button class="page-btn page-nav">Next →</button>
-    </div>
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;div class="k-pagination"&gt;
-  &lt;button class="page-btn page-nav"&gt;← Prev&lt;/button&gt;
-  &lt;button class="page-btn page-active"&gt;1&lt;/button&gt;
-  &lt;button class="page-btn"&gt;2&lt;/button&gt;
-  &lt;span class="page-ellipsis"&gt;…&lt;/span&gt;
-  &lt;button class="page-btn"&gt;9&lt;/button&gt;
-  &lt;button class="page-btn page-nav"&gt;Next →&lt;/button&gt;
-&lt;/div&gt;
-
-/* CSS */
-.k-pagination { display: flex; align-items: center; gap: 4px; }
-.page-btn {
-  min-width: 36px; height: 36px; padding: 0 10px;
-  border-radius: var(--radius-md-8);
-  border: 1.5px solid var(--color-gray-200);
-  background: var(--color-white);
-  color: var(--color-gray-700);
-  font-size: 13px; font-weight: 500; cursor: pointer;
-  transition: all 0.12s;
-}
-.page-btn:hover { border-color: var(--color-green-400); color: var(--color-green-500); }
-.page-btn.page-active {
-  background: var(--color-green-500);
-  border-color: var(--color-green-500);
-  color: #fff;
-}
-.page-nav { color: var(--color-gray-600); }
-.page-ellipsis { padding: 0 4px; color: var(--color-gray-400); }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ DIVIDER ═══════════════ -->
-  <section class="ds-section" id="divider">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Divider</h2>
-        <p class="section-desc">Horizontal and vertical separators with optional label.</p>
-      </div>
-    </div>
-    <div class="divider-examples">
-      <p class="subsection-label">Default</p>
-      <hr class="k-divider" />
-      <p class="subsection-label">With Label</p>
-      <div class="k-divider-labeled"><hr class="k-divider" /><span class="divider-label">OR</span><hr class="k-divider" /></div>
-      <p class="subsection-label">Dashed</p>
-      <hr class="k-divider k-divider-dashed" />
-    </div>
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;hr class="k-divider" /&gt;
-&lt;div class="k-divider-labeled"&gt;
-  &lt;hr class="k-divider" /&gt;
-  &lt;span class="divider-label"&gt;OR&lt;/span&gt;
-  &lt;hr class="k-divider" /&gt;
-&lt;/div&gt;
-
-/* CSS */
-.k-divider {
-  border: none; border-top: 1px solid var(--color-gray-200);
-  margin: 16px 0; width: 100%;
-}
-.k-divider-dashed { border-top-style: dashed; }
-.k-divider-labeled {
-  display: flex; align-items: center; gap: 12px; margin: 16px 0;
-}
-.divider-label {
-  flex-shrink: 0; font-size: 12px;
-  color: var(--color-gray-400); font-weight: 500;
-}</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ INDICATORS ═══════════════ -->
-  <section class="ds-section" id="indicators">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Indicators</h2>
-        <p class="section-desc">Status dots and progress-style indicators.</p>
-      </div>
-    </div>
-    <div class="comp-row wrap">
-      <div class="k-indicator"><span class="indicator-dot dot-green"></span>Online</div>
-      <div class="k-indicator"><span class="indicator-dot dot-yellow"></span>Away</div>
-      <div class="k-indicator"><span class="indicator-dot dot-red"></span>Offline</div>
-      <div class="k-indicator"><span class="indicator-dot dot-gray"></span>Unknown</div>
-    </div>
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;div class="k-indicator"&gt;
-  &lt;span class="indicator-dot dot-green"&gt;&lt;/span&gt;Online
-&lt;/div&gt;
-
-/* CSS */
-.k-indicator { display: flex; align-items: center; gap: 8px; font-size: 14px; }
-.indicator-dot {
-  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
-}
-.dot-green  { background: var(--color-green-400); }
-.dot-yellow { background: #F8AC1C; }
-.dot-red    { background: var(--color-red-500); }
-.dot-gray   { background: var(--color-gray-400); }</code></pre>
-    </div>
-  </section>
-
-  <!-- ═══════════════ SKELETON ═══════════════ -->
-  <section class="ds-section" id="skeleton">
-    <div class="section-header">
-      <div>
-        <h2 class="section-title">Skeleton Loader</h2>
-        <p class="section-desc">Animated placeholder for loading states.</p>
-      </div>
-    </div>
-    <div class="skeleton-demo">
-      <div class="skeleton-card">
-        <div class="sk sk-avatar"></div>
-        <div class="sk-content">
-          <div class="sk sk-line" style="width:60%"></div>
-          <div class="sk sk-line" style="width:90%"></div>
-          <div class="sk sk-line" style="width:75%"></div>
+  <!-- ══════════ COLORS ══════════ -->
+  <div class="page" id="page-colors">
+    <div class="page-inner">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Color</h1>
+          <p class="page-desc">60 color tokens across 8 palettes. Click any swatch to copy. Switch tabs for your platform.</p>
         </div>
       </div>
-      <div class="skeleton-card">
-        <div class="sk sk-image"></div>
-        <div class="sk sk-line mt-8" style="width:80%"></div>
-        <div class="sk sk-line" style="width:55%"></div>
-      </div>
-    </div>
-    <div class="code-block">
-      <div class="code-label">HTML + CSS <button class="copy-btn" onclick="copyBlock(this)">Copy</button></div>
-      <pre><code>&lt;div class="sk sk-line" style="width:80%"&gt;&lt;/div&gt;
-&lt;div class="sk sk-avatar"&gt;&lt;/div&gt;
 
-/* CSS */
-.sk {
-  background: linear-gradient(90deg,
-    var(--color-gray-100) 25%,
-    var(--color-gray-50) 50%,
-    var(--color-gray-100) 75%
-  );
-  background-size: 400% 100%;
-  border-radius: var(--radius-sm-4);
-  animation: shimmer 1.6s infinite;
-}
-.sk-line  { height: 14px; margin-bottom: 10px; }
-.sk-avatar { width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; }
-.sk-image  { width: 100%; height: 140px; border-radius: var(--radius-md-8); margin-bottom: 12px; }
-@keyframes shimmer {
-  0%   { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}</code></pre>
+      <!-- PLATFORM TABS — global for this page -->
+      <div class="platform-tabs" id="globalTabs">
+        <button class="ptab active" data-tab="css">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 3l16 9-16 9V3z"/></svg>
+          CSS / Web
+        </button>
+        <button class="ptab" data-tab="android">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 16a7 7 0 1114 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1z"/><path d="M9 16V9M15 16V9"/><circle cx="9" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
+          Android
+        </button>
+        <button class="ptab" data-tab="ios">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h1V6a4 4 0 014-4z"/></svg>
+          iOS / Swift
+        </button>
+        <button class="ptab" data-tab="tokens">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6M10 13h4M10 17h4M8 9h1"/></svg>
+          Tokens JSON
+        </button>
+      </div>
+
+      <!-- GREEN -->
+      <div class="palette-section">
+        <div class="palette-header">
+          <h3 class="palette-title">Green — Primary</h3>
+          <span class="palette-badge brand">Brand</span>
+        </div>
+        <div class="swatches-row" id="green-swatches">
+          <div class="swatch" data-hex="#F5FFE1" style="--bg:#F5FFE1;--fg:#134F1A"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">50</span><span class="sw-hex">#F5FFE1</span></div></div>
+          <div class="swatch" data-hex="#EFFFCD" style="--bg:#EFFFCD;--fg:#134F1A"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">100</span><span class="sw-hex">#EFFFCD</span></div></div>
+          <div class="swatch" data-hex="#D3F6AD" style="--bg:#D3F6AD;--fg:#134F1A"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">200</span><span class="sw-hex">#D3F6AD</span></div></div>
+          <div class="swatch featured" data-hex="#B6F174" style="--bg:#B6F174;--fg:#0D4213"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">300 ★</span><span class="sw-hex">#B6F174</span></div></div>
+          <div class="swatch featured" data-hex="#3F9444" style="--bg:#3F9444;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">400 ★</span><span class="sw-hex">#3F9444</span></div></div>
+          <div class="swatch" data-hex="#134F1A" style="--bg:#134F1A;--fg:#B6F174"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">500</span><span class="sw-hex">#134F1A</span></div></div>
+          <div class="swatch" data-hex="#0D4213" style="--bg:#0D4213;--fg:#B6F174"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">600</span><span class="sw-hex">#0D4213</span></div></div>
+          <div class="swatch" data-hex="#07310B" style="--bg:#07310B;--fg:#D3F6AD"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">700</span><span class="sw-hex">#07310B</span></div></div>
+        </div>
+        <div class="code-tabs-wrap">
+          <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>:root {
+  /* Green - Primary */
+  --color-green-50:  #F5FFE1;
+  --color-green-100: #EFFFCD;
+  --color-green-200: #D3F6AD;
+  --color-green-300: #B6F174; /* highlight / accent */
+  --color-green-400: #3F9444; /* interactive / buttons */
+  --color-green-500: #134F1A; /* brand dark */
+  --color-green-600: #0D4213;
+  --color-green-700: #07310B;
+}</code></pre></div></div>
+          <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>res/values/colors.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;resources&gt;
+  &lt;!-- Green - Primary --&gt;
+  &lt;color name="green_50"&gt;#F5FFE1&lt;/color&gt;
+  &lt;color name="green_100"&gt;#EFFFCD&lt;/color&gt;
+  &lt;color name="green_200"&gt;#D3F6AD&lt;/color&gt;
+  &lt;color name="green_300"&gt;#B6F174&lt;/color&gt;
+  &lt;color name="green_400"&gt;#3F9444&lt;/color&gt;
+  &lt;color name="green_500"&gt;#134F1A&lt;/color&gt;
+  &lt;color name="green_600"&gt;#0D4213&lt;/color&gt;
+  &lt;color name="green_700"&gt;#07310B&lt;/color&gt;
+&lt;/resources&gt;</code></pre></div></div>
+          <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Colors+Karage.swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>import UIKit
+
+extension UIColor {
+  // Green - Primary
+  static let green50  = UIColor(hex: "#F5FFE1")
+  static let green100 = UIColor(hex: "#EFFFCD")
+  static let green200 = UIColor(hex: "#D3F6AD")
+  static let green300 = UIColor(hex: "#B6F174")
+  static let green400 = UIColor(hex: "#3F9444")
+  static let green500 = UIColor(hex: "#134F1A")
+  static let green600 = UIColor(hex: "#0D4213")
+  static let green700 = UIColor(hex: "#07310B")
+}</code></pre></div></div>
+          <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>{
+  "color": {
+    "green": {
+      "50":  { "value": "#F5FFE1", "type": "color" },
+      "100": { "value": "#EFFFCD", "type": "color" },
+      "200": { "value": "#D3F6AD", "type": "color" },
+      "300": { "value": "#B6F174", "type": "color" },
+      "400": { "value": "#3F9444", "type": "color" },
+      "500": { "value": "#134F1A", "type": "color" },
+      "600": { "value": "#0D4213", "type": "color" },
+      "700": { "value": "#07310B", "type": "color" }
+    }
+  }
+}</code></pre></div></div>
+        </div>
+      </div>
+
+      <!-- GRAY -->
+      <div class="palette-section">
+        <div class="palette-header"><h3 class="palette-title">Gray — Text</h3><span class="palette-badge neutral">Neutral</span></div>
+        <div class="swatches-row">
+          <div class="swatch" data-hex="#F6F6F6" style="--bg:#F6F6F6;--fg:#333"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">50</span><span class="sw-hex">#F6F6F6</span></div></div>
+          <div class="swatch" data-hex="#EEEEEE" style="--bg:#EEEEEE;--fg:#333"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">100</span><span class="sw-hex">#EEEEEE</span></div></div>
+          <div class="swatch" data-hex="#E2E2E2" style="--bg:#E2E2E2;--fg:#333"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">200</span><span class="sw-hex">#E2E2E2</span></div></div>
+          <div class="swatch" data-hex="#CBCBCB" style="--bg:#CBCBCB;--fg:#333"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">300</span><span class="sw-hex">#CBCBCB</span></div></div>
+          <div class="swatch" data-hex="#AFAFAF" style="--bg:#AFAFAF;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">400</span><span class="sw-hex">#AFAFAF</span></div></div>
+          <div class="swatch" data-hex="#757575" style="--bg:#757575;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">500</span><span class="sw-hex">#757575</span></div></div>
+          <div class="swatch" data-hex="#545454" style="--bg:#545454;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">600</span><span class="sw-hex">#545454</span></div></div>
+          <div class="swatch" data-hex="#333333" style="--bg:#333333;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">700</span><span class="sw-hex">#333333</span></div></div>
+        </div>
+        <div class="code-tabs-wrap">
+          <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--color-gray-50:  #F6F6F6;
+--color-gray-100: #EEEEEE;
+--color-gray-200: #E2E2E2;
+--color-gray-300: #CBCBCB;
+--color-gray-400: #AFAFAF;
+--color-gray-500: #757575;
+--color-gray-600: #545454;
+--color-gray-700: #333333;
+--color-black:    #141414;
+--color-white:    #FFFFFF;</code></pre></div></div>
+          <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>colors.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;color name="gray_50"&gt;#F6F6F6&lt;/color&gt;
+&lt;color name="gray_100"&gt;#EEEEEE&lt;/color&gt;
+&lt;color name="gray_200"&gt;#E2E2E2&lt;/color&gt;
+&lt;color name="gray_300"&gt;#CBCBCB&lt;/color&gt;
+&lt;color name="gray_400"&gt;#AFAFAF&lt;/color&gt;
+&lt;color name="gray_500"&gt;#757575&lt;/color&gt;
+&lt;color name="gray_600"&gt;#545454&lt;/color&gt;
+&lt;color name="gray_700"&gt;#333333&lt;/color&gt;
+&lt;color name="black"&gt;#141414&lt;/color&gt;
+&lt;color name="white"&gt;#FFFFFF&lt;/color&gt;</code></pre></div></div>
+          <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static let gray50  = UIColor(hex: "#F6F6F6")
+static let gray100 = UIColor(hex: "#EEEEEE")
+static let gray200 = UIColor(hex: "#E2E2E2")
+static let gray300 = UIColor(hex: "#CBCBCB")
+static let gray400 = UIColor(hex: "#AFAFAF")
+static let gray500 = UIColor(hex: "#757575")
+static let gray600 = UIColor(hex: "#545454")
+static let gray700 = UIColor(hex: "#333333")</code></pre></div></div>
+          <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"gray": {
+  "50":  { "value": "#F6F6F6" },
+  "100": { "value": "#EEEEEE" },
+  "200": { "value": "#E2E2E2" },
+  "300": { "value": "#CBCBCB" },
+  "400": { "value": "#AFAFAF" },
+  "500": { "value": "#757575" },
+  "600": { "value": "#545454" },
+  "700": { "value": "#333333" }
+}</code></pre></div></div>
+        </div>
+      </div>
+
+      <!-- RED -->
+      <div class="palette-section">
+        <div class="palette-header"><h3 class="palette-title">Red — Alert</h3><span class="palette-badge danger">Danger</span></div>
+        <div class="swatches-row">
+          <div class="swatch" data-hex="#FEF3F2" style="--bg:#FEF3F2;--fg:#B42318"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">50</span><span class="sw-hex">#FEF3F2</span></div></div>
+          <div class="swatch" data-hex="#FEE4E2" style="--bg:#FEE4E2;--fg:#B42318"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">100</span><span class="sw-hex">#FEE4E2</span></div></div>
+          <div class="swatch" data-hex="#FECDCA" style="--bg:#FECDCA;--fg:#B42318"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">200</span><span class="sw-hex">#FECDCA</span></div></div>
+          <div class="swatch" data-hex="#FDA29B" style="--bg:#FDA29B;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">300</span><span class="sw-hex">#FDA29B</span></div></div>
+          <div class="swatch" data-hex="#F97066" style="--bg:#F97066;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">400</span><span class="sw-hex">#F97066</span></div></div>
+          <div class="swatch" data-hex="#F04438" style="--bg:#F04438;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">500</span><span class="sw-hex">#F04438</span></div></div>
+          <div class="swatch" data-hex="#D92D20" style="--bg:#D92D20;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">600</span><span class="sw-hex">#D92D20</span></div></div>
+          <div class="swatch" data-hex="#B42318" style="--bg:#B42318;--fg:#fff"><div class="sw-color"></div><div class="sw-info"><span class="sw-step">700</span><span class="sw-hex">#B42318</span></div></div>
+        </div>
+        <div class="code-tabs-wrap">
+          <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--color-red-50:  #FEF3F2;
+--color-red-100: #FEE4E2;
+--color-red-200: #FECDCA;
+--color-red-300: #FDA29B;
+--color-red-400: #F97066;
+--color-red-500: #F04438;
+--color-red-600: #D92D20;
+--color-red-700: #B42318;</code></pre></div></div>
+          <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>colors.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;color name="red_50"&gt;#FEF3F2&lt;/color&gt;
+&lt;color name="red_100"&gt;#FEE4E2&lt;/color&gt;
+&lt;color name="red_200"&gt;#FECDCA&lt;/color&gt;
+&lt;color name="red_300"&gt;#FDA29B&lt;/color&gt;
+&lt;color name="red_400"&gt;#F97066&lt;/color&gt;
+&lt;color name="red_500"&gt;#F04438&lt;/color&gt;
+&lt;color name="red_600"&gt;#D92D20&lt;/color&gt;
+&lt;color name="red_700"&gt;#B42318&lt;/color&gt;</code></pre></div></div>
+          <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static let red50  = UIColor(hex: "#FEF3F2")
+static let red100 = UIColor(hex: "#FEE4E2")
+static let red200 = UIColor(hex: "#FECDCA")
+static let red300 = UIColor(hex: "#FDA29B")
+static let red400 = UIColor(hex: "#F97066")
+static let red500 = UIColor(hex: "#F04438")
+static let red600 = UIColor(hex: "#D92D20")
+static let red700 = UIColor(hex: "#B42318")</code></pre></div></div>
+          <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"red": {
+  "50":  { "value": "#FEF3F2" },
+  "300": { "value": "#FDA29B" },
+  "500": { "value": "#F04438" },
+  "600": { "value": "#D92D20" },
+  "700": { "value": "#B42318" }
+}</code></pre></div></div>
+        </div>
+      </div>
+
+      <!-- SUPPORTIVE -->
+      <div class="palette-section">
+        <div class="palette-header"><h3 class="palette-title">Supportive Palettes</h3><span class="palette-badge supportive">Contextual</span></div>
+        <div class="supportive-grid">
+          <div class="sup-col">
+            <div class="sup-col-label">Seance</div>
+            <div class="sup-swatch" data-hex="#F8EEFE" style="--bg:#F8EEFE"><span>50</span><span class="s-hex">#F8EEFE</span></div>
+            <div class="sup-swatch" data-hex="#D6A5F7" style="--bg:#D6A5F7"><span>300</span><span class="s-hex">#D6A5F7</span></div>
+            <div class="sup-swatch" data-hex="#752A9F" style="--bg:#752A9F;color:#fff"><span>500</span><span class="s-hex">#752A9F</span></div>
+          </div>
+          <div class="sup-col">
+            <div class="sup-col-label">Prairie Sand</div>
+            <div class="sup-swatch" data-hex="#FFE9E2" style="--bg:#FFE9E2"><span>50</span><span class="s-hex">#FFE9E2</span></div>
+            <div class="sup-swatch" data-hex="#FE9679" style="--bg:#FE9679"><span>300</span><span class="s-hex">#FE9679</span></div>
+            <div class="sup-swatch" data-hex="#993C27" style="--bg:#993C27;color:#fff"><span>500</span><span class="s-hex">#993C27</span></div>
+          </div>
+          <div class="sup-col">
+            <div class="sup-col-label">Corn Harvest</div>
+            <div class="sup-swatch" data-hex="#FEF3DD" style="--bg:#FEF3DD"><span>50</span><span class="s-hex">#FEF3DD</span></div>
+            <div class="sup-swatch" data-hex="#FAC560" style="--bg:#FAC560"><span>300</span><span class="s-hex">#FAC560</span></div>
+            <div class="sup-swatch" data-hex="#8E6A0C" style="--bg:#8E6A0C;color:#fff"><span>500</span><span class="s-hex">#8E6A0C</span></div>
+          </div>
+          <div class="sup-col">
+            <div class="sup-col-label">Chambray</div>
+            <div class="sup-swatch" data-hex="#EAEFFF" style="--bg:#EAEFFF"><span>50</span><span class="s-hex">#EAEFFF</span></div>
+            <div class="sup-swatch" data-hex="#7196FE" style="--bg:#7196FE;color:#fff"><span>300</span><span class="s-hex">#7196FE</span></div>
+            <div class="sup-swatch" data-hex="#1A3FBF" style="--bg:#1A3FBF;color:#fff"><span>500</span><span class="s-hex">#1A3FBF</span></div>
+          </div>
+          <div class="sup-col">
+            <div class="sup-col-label">Accents</div>
+            <div class="sup-swatch" data-hex="#FD693F" style="--bg:#FD693F;color:#fff"><span>Orange</span><span class="s-hex">#FD693F</span></div>
+            <div class="sup-swatch" data-hex="#7196FE" style="--bg:#7196FE;color:#fff"><span>Cornflower</span><span class="s-hex">#7196FE</span></div>
+            <div class="sup-swatch" data-hex="#A49D93" style="--bg:#A49D93;color:#fff"><span>Zorba</span><span class="s-hex">#A49D93</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- USAGE -->
+      <div class="usage-section">
+        <h3 class="usage-title">Usage Guide</h3>
+        <div class="usage-grid">
+          <div class="usage-card"><div class="usage-dot" style="background:#B6F174"></div><div><div class="usage-name">Primary 300 <code>#B6F174</code></div><div class="usage-desc">Highlights, accents, icons on dark backgrounds</div></div></div>
+          <div class="usage-card"><div class="usage-dot" style="background:#3F9444"></div><div><div class="usage-name">Primary 400 <code>#3F9444</code></div><div class="usage-desc">Buttons, links, interactive elements, icons on white</div></div></div>
+          <div class="usage-card"><div class="usage-dot" style="background:#134F1A"></div><div><div class="usage-name">Primary 500 <code>#134F1A</code></div><div class="usage-desc">Sidebar, headers, brand dark surfaces</div></div></div>
+          <div class="usage-card"><div class="usage-dot" style="background:#F04438"></div><div><div class="usage-name">Red 500 <code>#F04438</code></div><div class="usage-desc">Errors, destructive actions, alerts</div></div></div>
+          <div class="usage-card"><div class="usage-dot" style="background:#333333"></div><div><div class="usage-name">Gray 700 <code>#333333</code></div><div class="usage-desc">Primary text, headings, body content</div></div></div>
+          <div class="usage-card"><div class="usage-dot" style="background:#AFAFAF"></div><div><div class="usage-name">Gray 400 <code>#AFAFAF</code></div><div class="usage-desc">Placeholder text, disabled, captions</div></div></div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+
+  <!-- ══════════ DEVELOPING ══════════ -->
+  <div class="page" id="page-dev">
+    <div class="dev-empty">
+      <div class="dev-orbit">
+        <div class="dev-center-dot"></div>
+        <div class="dev-ring ring-1"></div>
+        <div class="dev-ring ring-2"></div>
+        <div class="dev-ring ring-3"></div>
+        <div class="orbit-dot od1"></div>
+        <div class="orbit-dot od2"></div>
+        <div class="orbit-dot od3"></div>
+      </div>
+      <h2 class="dev-title">Under Development</h2>
+      <p class="dev-desc">This section is actively being built. We're documenting design tokens, live previews, and code snippets for all platforms — Web, Android, iOS & Backend.</p>
+      <div class="dev-progress-wrap">
+        <div class="dev-prog-bar"><div class="dev-prog-fill"></div></div>
+        <span class="dev-prog-label">15% complete</span>
+      </div>
+      <button class="back-home-btn" onclick="goTo('home')">← Back to Overview</button>
+    </div>
+  </div>
 
 </main>
 
-<!-- Toast container -->
-<div id="toast-container"></div>
-
-<!-- Swatch tooltip -->
-<div class="swatch-tooltip" id="swatchTooltip"></div>
+<!-- Copy toast -->
+<div id="copy-toast" class="copy-toast">Copied!</div>
 
 <script src="script.js"></script>
 </body>

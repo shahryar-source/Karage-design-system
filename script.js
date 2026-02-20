@@ -32,7 +32,19 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('sidebar').classList.toggle('open');
 });
 
-// ─── PLATFORM TABS ───
+function openA11y() {
+  document.getElementById('a11yDrawer').classList.add('open');
+  document.getElementById('a11yOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeA11y() {
+  document.getElementById('a11yDrawer').classList.remove('open');
+  document.getElementById('a11yOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeA11y(); });
+
+
 function syncTab(tab) {
   document.querySelectorAll('.tab-pane').forEach(pane => {
     pane.classList.toggle('active', pane.dataset.tab === tab);

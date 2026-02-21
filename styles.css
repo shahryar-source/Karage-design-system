@@ -1195,3 +1195,256 @@ body {
   border-bottom: none !important;
   padding-bottom: 32px !important;
 }
+
+/* ─── TYPOGRAPHY PAGE ─────────────────────────────────────── */
+
+/* Font intro hero card */
+.typo-font-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #EEEEEE;
+  border-radius: 20px;
+  padding: 36px 40px 32px;
+  margin-bottom: 48px;
+  overflow: hidden;
+  position: relative;
+}
+.typo-font-left { flex: 1; min-width: 0; }
+.typo-font-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: #141414;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+.typo-font-glyphs {
+  font-size: 12px;
+  color: #C0C0C0;
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+.typo-weights-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.typo-weight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #F7F7F7;
+  border-radius: 12px;
+  padding: 14px 16px 10px;
+  flex: 1;
+  min-width: 72px;
+  transition: background 0.15s;
+}
+.typo-weight-item:hover { background: #EFEFEF; }
+.typo-weight-preview {
+  font-size: 26px;
+  color: #141414;
+  line-height: 1;
+}
+.typo-weight-label {
+  font-size: 10px;
+  color: #AFAFAF;
+  font-family: 'DM Mono', monospace;
+  white-space: nowrap;
+}
+.typo-font-hero {
+  font-size: 180px;
+  font-weight: 800;
+  color: #F0F0F0;
+  line-height: 1;
+  letter-spacing: -8px;
+  flex-shrink: 0;
+  margin-left: 24px;
+  user-select: none;
+}
+
+/* Platform tabs (reused from colors, typo-specific sync) */
+
+
+/* Section group headings — clear hierarchy below page-title (36px/800) */
+.typo-section-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #141414;
+  letter-spacing: -0.3px;
+  margin: 36px 0 14px;
+}
+.typo-section-heading:first-of-type { margin-top: 0; }
+
+/* Scale cards */
+.typo-scale-card {
+  background: #fff;
+  border: 1px solid #EEEEEE;
+  border-radius: 16px;
+  padding: 24px 28px 20px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.15s;
+}
+.typo-scale-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.typo-scale-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #F2F2F2;
+}
+.typo-scale-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #141414;
+  font-family: 'DM Mono', monospace;
+  background: #F2F2F2;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.typo-scale-spec {
+  font-size: 12px;
+  color: #AFAFAF;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Type specimen rows */
+.typo-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.typo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #F6F6F6;
+}
+.typo-row:last-child { border-bottom: none; padding-bottom: 0; }
+.typo-sample {
+  color: #141414;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.typo-tag {
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+  color: #909090;
+  background: #F6F6F6;
+  border-radius: 6px;
+  padding: 3px 9px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Code block inside scale card */
+.typo-code-block {
+  margin-top: 20px;
+  border-top: 1px solid #F2F2F2;
+  padding-top: 20px;
+}
+
+
+/* Grids */
+.typo-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.typo-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.typo-grid-2 .typo-scale-card,
+.typo-grid-3 .typo-scale-card {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .typo-grid-2, .typo-grid-3 { grid-template-columns: 1fr; }
+  .typo-font-intro { flex-direction: column; align-items: flex-start; }
+  .typo-font-hero { display: none; }
+  .typo-weight-item { min-width: 60px; padding: 10px 10px 8px; }
+}
+
+/* ─── FONT SYSTEM TOGGLE ──────────────────────────────────── */
+.font-system-toggle {
+  display: flex;
+  gap: 8px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  padding: 5px;
+  border-radius: 14px;
+  width: fit-content;
+  margin-bottom: 36px;
+}
+.fsys-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: inherit;
+}
+.fsys-btn:hover { background: #fff; color: var(--charcoal); }
+.fsys-btn.active {
+  background: #fff;
+  color: var(--charcoal);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.06);
+}
+.fsys-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #EEF5FF;
+  color: #3A6FD8;
+}
+.fsys-badge-android {
+  background: #F0FDF0;
+  color: #3F9444;
+}
+
+/* Roboto card accent */
+.roboto-card { border-color: #E8F5E9; }
+.roboto-sample { font-family: 'Roboto', sans-serif !important; }
+
+/* MD3 note */
+.md3-note {
+  font-size: 11px;
+  color: #AFAFAF;
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.md3-note::before {
+  content: '';
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #3F9444;
+  flex-shrink: 0;
+}

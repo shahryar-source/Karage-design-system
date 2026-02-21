@@ -98,3 +98,34 @@ document.addEventListener('click', (e) => {
     }
   }
 });
+
+// ─── TYPOGRAPHY TABS ───
+function syncTypoTab(tab) {
+  // Only affect the currently visible font system
+  const activeSystem = document.querySelector('#page-typography .font-system[style=""], #page-typography .font-system:not([style])') 
+    || document.getElementById('system-sfpro');
+  activeSystem.querySelectorAll('.tab-pane').forEach(pane => {
+    pane.classList.toggle('active', pane.dataset.tab === tab);
+  });
+  activeSystem.querySelectorAll('.ptab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tab);
+  });
+}
+
+// ─── FONT SYSTEM TOGGLE ───
+function switchFontSystem(sys) {
+  // Show/hide systems
+  document.getElementById('system-sfpro').style.display  = sys === 'sfpro'  ? '' : 'none';
+  document.getElementById('system-roboto').style.display = sys === 'roboto' ? '' : 'none';
+  // Update toggle buttons
+  document.getElementById('fsys-sfpro').classList.toggle('active',  sys === 'sfpro');
+  document.getElementById('fsys-roboto').classList.toggle('active', sys === 'roboto');
+  // Reset tabs to CSS in whichever system is now visible
+  const activeSystem = document.getElementById('system-' + sys);
+  activeSystem.querySelectorAll('.tab-pane').forEach(p => {
+    p.classList.toggle('active', p.dataset.tab === 'css');
+  });
+  activeSystem.querySelectorAll('.ptab').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === 'css');
+  });
+}

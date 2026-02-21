@@ -35,12 +35,12 @@ document.getElementById('hamburger').addEventListener('click', () => {
 function openA11y() {
   document.getElementById('a11yDrawer').classList.add('open');
   document.getElementById('a11yOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.querySelector('.main').style.overflow = 'hidden';
 }
 function closeA11y() {
   document.getElementById('a11yDrawer').classList.remove('open');
   document.getElementById('a11yOverlay').classList.remove('open');
-  document.body.style.overflow = '';
+  document.querySelector('.main').style.overflow = 'auto';
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeA11y(); });
 

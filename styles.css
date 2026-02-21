@@ -30,16 +30,15 @@
   --sidebar-w: 260px;
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html, body { height: 100%; overflow: hidden; }
 
 body {
   font-family: 'Sora', sans-serif;
   background: var(--gray-50);
   color: var(--charcoal);
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 /* ─────────────────────────────
@@ -198,7 +197,9 @@ body {
   margin-left: calc(var(--sidebar-w) + 24px);
   padding: 0 40px;
   flex: 1;
-  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -912,26 +913,24 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   width: 520px;
   max-width: 95vw;
+  height: 100vh;
   background: #fff;
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   transform: translateX(110%);
   transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   box-shadow: -8px 0 48px rgba(0,0,0,0.14);
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 .a11y-drawer.open { transform: translateX(0); }
 
 .a11y-drawer-header {
-  flex-shrink: 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 24px 24px 18px;
+  padding: 20px 20px 16px;
   border-bottom: 1px solid #EEEEEE;
   background: #F6F6F6;
 }
@@ -963,19 +962,20 @@ body {
 .a11y-close:hover { background: #E2E2E2; }
 
 .a11y-drawer-body {
-  flex: 1;
-  min-height: 0;
   overflow-y: auto;
-  padding: 8px 24px 60px;
+  overflow-x: hidden;
+  padding: 0;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Sections */
 .a11y-section {
-  padding: 24px 0;
+  padding: 24px 20px;
   border-bottom: 1px solid #F0F0F0;
 }
-.a11y-section:first-child { padding-top: 4px; }
-.a11y-section:last-of-type { border-bottom: none; }
+.a11y-section:first-child { padding-top: 20px; }
+.a11y-section:last-of-type { border-bottom: none; padding-bottom: 60px; }
 
 .a11y-section-title {
   display: flex;
@@ -1059,7 +1059,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 12px 14px;
+  padding: 12px 12px;
   background: #F6F6F6;
   border-radius: 10px;
 }
@@ -1160,7 +1160,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   background: #F6F6F6;
   border-radius: 10px;
 }
@@ -1189,4 +1189,9 @@ body {
   font-size: 11.5px;
   color: #757575;
   line-height: 1.4;
+}
+
+.a11y-final-section {
+  border-bottom: none !important;
+  padding-bottom: 32px !important;
 }

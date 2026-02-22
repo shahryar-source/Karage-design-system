@@ -1287,6 +1287,7 @@ body {
   padding: 24px 28px 20px;
   margin-bottom: 12px;
   transition: box-shadow 0.15s;
+  min-width: 0;
 }
 .typo-scale-card:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
@@ -1370,6 +1371,23 @@ body {
 .typo-grid-2 .typo-scale-card,
 .typo-grid-3 .typo-scale-card {
   margin-bottom: 0;
+  min-width: 0; /* prevent grid blowout */
+}
+
+/* Ensure code inside grid cards never escapes its column */
+.typo-grid-2 .code-block,
+.typo-grid-3 .code-block {
+  min-width: 0;
+  overflow: hidden;
+}
+.typo-grid-2 .code-block pre,
+.typo-grid-3 .code-block pre {
+  overflow-x: auto;
+}
+.typo-grid-2 .code-block code,
+.typo-grid-3 .code-block code {
+  white-space: pre;
+  display: block;
 }
 
 @media (max-width: 900px) {

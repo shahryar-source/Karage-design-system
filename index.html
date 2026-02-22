@@ -822,9 +822,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
 
         <!-- Platform Tabs -->
         <div class="platform-tabs">
-          <button class="ptab active" data-tab="css" onclick="syncTypoTab('css')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 3l16 9-16 9V3z"/></svg> CSS / Web</button>
-          <button class="ptab" data-tab="android" onclick="syncTypoTab('android')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 16a7 7 0 1114 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1z"/><path d="M9 16V9M15 16V9"/><circle cx="9" cy="7" r="1" fill="currentColor"/><circle cx="15" cy="7" r="1" fill="currentColor"/></svg> Android</button>
-          <button class="ptab" data-tab="ios" onclick="syncTypoTab('ios')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h1V6a4 4 0 014-4z"/></svg> iOS / Swift</button>
+          <button class="ptab active" data-tab="ios" onclick="syncTypoTab('ios')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h1V6a4 4 0 014-4z"/></svg> iOS / Swift</button>
           <button class="ptab" data-tab="tokens" onclick="syncTypoTab('tokens')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6"/></svg> Tokens JSON</button>
         </div>
 
@@ -838,15 +836,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
             <div class="typo-row"><span class="typo-sample" style="font-size:48px;line-height:64px;font-weight:400;letter-spacing:-0.25px">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
           </div>
           <div class="typo-code-block">
-            <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-d1-size: 48px;
---typo-d1-line-height: 64px;
---typo-d1-tracking: -0.25px;</code></pre></div></div>
-            <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Display1"&gt;
-  &lt;item name="android:textSize"&gt;48sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;64sp&lt;/item&gt;
-  &lt;item name="android:letterSpacing"&gt;-0.005&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-            <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func display1(_ weight: UIFont.Weight) -&gt; UIFont {
+            <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func display1(_ weight: UIFont.Weight) -&gt; UIFont {
   UIFont.systemFont(ofSize: 48, weight: weight)
 }</code></pre></div></div>
             <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"display-1": { "font-size": "48px", "line-height": "64px", "letter-spacing": "-0.25px" }</code></pre></div></div>
@@ -861,14 +851,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
             <div class="typo-row"><span class="typo-sample" style="font-size:42px;line-height:50px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
           </div>
           <div class="typo-code-block">
-            <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-d2-size: 42px;
---typo-d2-line-height: 50px;
---typo-d2-tracking: 0px;</code></pre></div></div>
-            <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Display2"&gt;
-  &lt;item name="android:textSize"&gt;42sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;50sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-            <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func display2(_ weight: UIFont.Weight) -&gt; UIFont {
+            <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func display2(_ weight: UIFont.Weight) -&gt; UIFont {
   UIFont.systemFont(ofSize: 42, weight: weight)
 }</code></pre></div></div>
             <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"display-2": { "font-size": "42px", "line-height": "50px", "letter-spacing": "0px" }</code></pre></div></div>
@@ -886,12 +869,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:36px;line-height:44px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-h1-size: 36px; --typo-h1-line-height: 44px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Heading1"&gt;
-  &lt;item name="android:textSize"&gt;36sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;44sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 36, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 36, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"heading-1": { "font-size": "36px", "line-height": "44px" }</code></pre></div></div>
             </div>
           </div>
@@ -904,12 +882,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:32px;line-height:40px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-h2-size: 32px; --typo-h2-line-height: 40px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Heading2"&gt;
-  &lt;item name="android:textSize"&gt;32sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;40sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 32, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 32, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"heading-2": { "font-size": "32px", "line-height": "40px" }</code></pre></div></div>
             </div>
           </div>
@@ -921,12 +894,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:28px;line-height:36px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-h3-size: 28px; --typo-h3-line-height: 36px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Heading3"&gt;
-  &lt;item name="android:textSize"&gt;28sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;36sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 28, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 28, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"heading-3": { "font-size": "28px", "line-height": "36px" }</code></pre></div></div>
             </div>
           </div>
@@ -938,12 +906,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:24px;line-height:32px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-h4-size: 24px; --typo-h4-line-height: 32px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Heading4"&gt;
-  &lt;item name="android:textSize"&gt;24sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;32sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading4(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 24, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func heading4(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 24, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"heading-4": { "font-size": "24px", "line-height": "32px" }</code></pre></div></div>
             </div>
           </div>
@@ -959,12 +922,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:22px;line-height:28px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-title-l4-size: 22px; --typo-title-l4-line-height: 28px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Title.L4"&gt;
-  &lt;item name="android:textSize"&gt;22sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;28sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL4(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 22, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL4(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 22, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"title-l4": { "font-size": "22px", "line-height": "28px" }</code></pre></div></div>
             </div>
           </div>
@@ -976,12 +934,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:20px;line-height:28px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-title-l3-size: 20px; --typo-title-l3-line-height: 28px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Title.L3"&gt;
-  &lt;item name="android:textSize"&gt;20sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;28sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 20, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 20, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"title-l3": { "font-size": "20px", "line-height": "28px" }</code></pre></div></div>
             </div>
           </div>
@@ -993,12 +946,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:18px;line-height:24px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-title-l2-size: 18px; --typo-title-l2-line-height: 24px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Title.L2"&gt;
-  &lt;item name="android:textSize"&gt;18sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;24sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 18, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 18, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"title-l2": { "font-size": "18px", "line-height": "24px" }</code></pre></div></div>
             </div>
           </div>
@@ -1010,12 +958,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:16px;line-height:20px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-title-l1-size: 16px; --typo-title-l1-line-height: 20px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Title.L1"&gt;
-  &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 16, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func titleL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 16, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"title-l1": { "font-size": "16px", "line-height": "20px" }</code></pre></div></div>
             </div>
           </div>
@@ -1031,12 +974,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:14px;line-height:20px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-label-l3-size: 14px; --typo-label-l3-line-height: 20px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Label.L3"&gt;
-  &lt;item name="android:textSize"&gt;14sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 14, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 14, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"label-l3": { "font-size": "14px", "line-height": "20px" }</code></pre></div></div>
             </div>
           </div>
@@ -1048,12 +986,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:13px;line-height:16px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-label-l2-size: 13px; --typo-label-l2-line-height: 16px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Label.L2"&gt;
-  &lt;item name="android:textSize"&gt;13sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 13, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 13, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"label-l2": { "font-size": "13px", "line-height": "16px" }</code></pre></div></div>
             </div>
           </div>
@@ -1065,12 +998,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:11px;line-height:16px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-label-l1-size: 11px; --typo-label-l1-line-height: 16px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Label.L1"&gt;
-  &lt;item name="android:textSize"&gt;11sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 11, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func labelL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 11, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"label-l1": { "font-size": "11px", "line-height": "16px" }</code></pre></div></div>
             </div>
           </div>
@@ -1086,12 +1014,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:18px;line-height:24px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-body-l3-size: 18px; --typo-body-l3-line-height: 24px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Body.L3"&gt;
-  &lt;item name="android:textSize"&gt;18sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;24sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 18, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL3(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 18, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"body-l3": { "font-size": "18px", "line-height": "24px" }</code></pre></div></div>
             </div>
           </div>
@@ -1103,12 +1026,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:16px;line-height:20px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-body-l2-size: 16px; --typo-body-l2-line-height: 20px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Body.L2"&gt;
-  &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 16, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL2(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 16, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"body-l2": { "font-size": "16px", "line-height": "20px" }</code></pre></div></div>
             </div>
           </div>
@@ -1120,12 +1038,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample" style="font-size:14px;line-height:16px;font-weight:400">Keep It Simple</span><span class="typo-tag">Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS Variables</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>--typo-body-l1-size: 14px; --typo-body-l1-line-height: 16px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Body.L1"&gt;
-  &lt;item name="android:textSize"&gt;14sp&lt;/item&gt;
-  &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
-&lt;/style&gt;</code></pre></div></div>
-              <div class="tab-pane" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 14, weight: w) }</code></pre></div></div>
+              <div class="tab-pane active" data-tab="ios"><div class="code-block"><div class="code-bar"><span>Swift</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>static func bodyL1(_ w: UIFont.Weight) -&gt; UIFont { UIFont.systemFont(ofSize: 14, weight: w) }</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"body-l1": { "font-size": "14px", "line-height": "16px" }</code></pre></div></div>
             </div>
           </div>
@@ -1158,8 +1071,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
 
         <!-- Platform Tabs -->
         <div class="platform-tabs">
-          <button class="ptab active" data-tab="css" onclick="syncTypoTab('css')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 3l16 9-16 9V3z"/></svg> CSS / Web</button>
-          <button class="ptab" data-tab="android" onclick="syncTypoTab('android')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 16a7 7 0 1114 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1z"/><path d="M9 16V9M15 16V9"/><circle cx="9" cy="7" r="1" fill="currentColor"/><circle cx="15" cy="7" r="1" fill="currentColor"/></svg> Android</button>
+          <button class="ptab active" data-tab="android" onclick="syncTypoTab('android')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 16a7 7 0 1114 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1z"/><path d="M9 16V9M15 16V9"/><circle cx="9" cy="7" r="1" fill="currentColor"/><circle cx="15" cy="7" r="1" fill="currentColor"/></svg> Android</button>
           <button class="ptab" data-tab="tokens" onclick="syncTypoTab('tokens')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6"/></svg> Tokens JSON</button>
         </div>
 
@@ -1171,12 +1083,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:57px;line-height:64px;font-weight:400;letter-spacing:-0.25px">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-family: 'Roboto', sans-serif;
-font-size: 57px;
-line-height: 64px;
-letter-spacing: -0.25px;
-font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplayLarge"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplayLarge"&gt;
   &lt;item name="android:fontFamily"&gt;@font/roboto&lt;/item&gt;
   &lt;item name="android:textSize"&gt;57sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;64sp&lt;/item&gt;
@@ -1191,11 +1098,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:45px;line-height:52px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-family: 'Roboto', sans-serif;
-font-size: 45px;
-line-height: 52px;
-font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplayMedium"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplayMedium"&gt;
   &lt;item name="android:textSize"&gt;45sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;52sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1208,11 +1111,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:36px;line-height:44px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-family: 'Roboto', sans-serif;
-font-size: 36px;
-line-height: 44px;
-font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplaySmall"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.DisplaySmall"&gt;
   &lt;item name="android:textSize"&gt;36sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;44sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1229,8 +1128,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:32px;line-height:40px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 32px; line-height: 40px; font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineLarge"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineLarge"&gt;
   &lt;item name="android:textSize"&gt;32sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;40sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1243,8 +1141,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:28px;line-height:36px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 28px; line-height: 36px; font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineMedium"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineMedium"&gt;
   &lt;item name="android:textSize"&gt;28sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;36sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1257,8 +1154,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:24px;line-height:32px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 24px; line-height: 32px; font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineSmall"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.HeadlineSmall"&gt;
   &lt;item name="android:textSize"&gt;24sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;32sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1275,8 +1171,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:22px;line-height:28px;font-weight:400">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 22px; line-height: 28px; font-weight: 400;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleLarge"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleLarge"&gt;
   &lt;item name="android:textSize"&gt;22sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;28sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1289,8 +1184,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:16px;line-height:24px;font-weight:500;letter-spacing:0.15px">Keep It Simple</span><span class="typo-tag">500 Medium</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 0.15px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleMedium"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleMedium"&gt;
   &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;24sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.009&lt;/item&gt;
@@ -1304,8 +1198,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:14px;line-height:20px;font-weight:500;letter-spacing:0.1px">Keep It Simple</span><span class="typo-tag">500 Medium</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: 0.1px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleSmall"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.TitleSmall"&gt;
   &lt;item name="android:textSize"&gt;14sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.007&lt;/item&gt;
@@ -1323,8 +1216,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:14px;line-height:20px;font-weight:500;letter-spacing:0.1px">Keep It Simple</span><span class="typo-tag">500 Medium</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: 0.1px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelLarge"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelLarge"&gt;
   &lt;item name="android:textSize"&gt;14sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
@@ -1337,8 +1229,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:12px;line-height:16px;font-weight:500;letter-spacing:0.5px">Keep It Simple</span><span class="typo-tag">500 Medium</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelMedium"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelMedium"&gt;
   &lt;item name="android:textSize"&gt;12sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.042&lt;/item&gt;
@@ -1352,8 +1243,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:11px;line-height:16px;font-weight:500;letter-spacing:0.5px">Keep It Simple</span><span class="typo-tag">500 Medium</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelSmall"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.LabelSmall"&gt;
   &lt;item name="android:textSize"&gt;11sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.045&lt;/item&gt;
@@ -1371,8 +1261,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:16px;line-height:24px;font-weight:400;letter-spacing:0.5px">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: 0.5px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodyLarge"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodyLarge"&gt;
   &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;24sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.031&lt;/item&gt;
@@ -1386,8 +1275,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:14px;line-height:20px;font-weight:400;letter-spacing:0.25px">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 14px; line-height: 20px; font-weight: 400; letter-spacing: 0.25px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodyMedium"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodyMedium"&gt;
   &lt;item name="android:textSize"&gt;14sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.018&lt;/item&gt;
@@ -1401,8 +1289,7 @@ font-weight: 400;</code></pre></div></div>
               <div class="typo-row"><span class="typo-sample roboto-sample" style="font-size:12px;line-height:16px;font-weight:400;letter-spacing:0.4px">Keep It Simple</span><span class="typo-tag">400 Regular</span></div>
             </div>
             <div class="typo-code-block">
-              <div class="tab-pane active" data-tab="css"><div class="code-block"><div class="code-bar"><span>CSS</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.4px;</code></pre></div></div>
-              <div class="tab-pane" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodySmall"&gt;
+              <div class="tab-pane active" data-tab="android"><div class="code-block"><div class="code-bar"><span>styles.xml</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>&lt;style name="TextAppearance.Material3.BodySmall"&gt;
   &lt;item name="android:textSize"&gt;12sp&lt;/item&gt;
   &lt;item name="android:lineHeight"&gt;16sp&lt;/item&gt;
   &lt;item name="android:letterSpacing"&gt;0.033&lt;/item&gt;

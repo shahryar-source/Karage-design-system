@@ -53,12 +53,12 @@
       <span class="live-dot"></span>
     </a>
 
-    <a href="#" class="nav-item nav-dev" data-page="dev">
+    <a href="#" class="nav-item" data-page="spacing">
       <span class="nav-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4v16M20 4v16M4 12h16" stroke-linecap="round"/><path d="M7 9l-3 3 3 3M17 9l3 3-3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
       Spacing
-      <span class="dev-pill">Dev</span>
+      <span class="live-dot"></span>
     </a>
 
     <a href="#" class="nav-item nav-dev" data-page="dev">
@@ -198,11 +198,11 @@
           <div class="card-sub">54 styles · 5 levels</div>
         </div>
 
-        <div class="ds-card" data-status="deploying" onclick="goTo('dev')">
+        <div class="ds-card" data-status="live" onclick="goTo('spacing')">
           <div class="card-top">
             <div class="card-icon-wrap"><svg width="34" height="34" viewBox="0 0 48 48" fill="none"><rect x="5" y="7" width="6" height="34" rx="3" fill="#134F1A"/><rect x="37" y="7" width="6" height="34" rx="3" fill="#134F1A"/><rect x="5" y="21" width="38" height="7" rx="3.5" fill="#B6F174"/></svg>
             </div>
-            <span class="card-status-tag deploy-tag" style="border-radius:100px!important;padding:3px 10px!important;display:inline-block!important;font-size:12px!important;font-weight:700!important;">Dev</span>
+            <span class="card-status-tag live-tag" style="border-radius:100px!important;padding:3px 10px!important;display:inline-flex!important;font-size:12px!important;font-weight:700!important;">Live</span>
           </div>
           <div class="card-name">Spacing</div>
           <div class="card-sub">26 tokens · Xs–XXl</div>
@@ -1072,6 +1072,7 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
         <!-- Platform Tabs -->
         <div class="platform-tabs">
           <button class="ptab active" data-tab="android" onclick="syncTypoTab('android')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 16a7 7 0 1114 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1z"/><path d="M9 16V9M15 16V9"/><circle cx="9" cy="7" r="1" fill="currentColor"/><circle cx="15" cy="7" r="1" fill="currentColor"/></svg> Android</button>
+          <button class="ptab" data-tab="compose" onclick="syncTypoTab('compose')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> Compose</button>
           <button class="ptab" data-tab="tokens" onclick="syncTypoTab('tokens')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6"/></svg> Tokens JSON</button>
         </div>
 
@@ -1090,6 +1091,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;-0.004&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-display-large": { "font-size": "57px", "line-height": "64px", "letter-spacing": "-0.25px", "font-weight": 400 }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.displayLarge
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.displayLarge
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 57.sp,
+    lineHeight = 64.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = -0.004.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1103,6 +1118,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;52sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-display-medium": { "font-size": "45px", "line-height": "52px", "font-weight": 400 }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.displayMedium
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.displayMedium
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 45.sp,
+    lineHeight = 52.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1116,6 +1145,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;44sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-display-small": { "font-size": "36px", "line-height": "44px", "font-weight": 400 }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.displaySmall
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.displaySmall
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 36.sp,
+    lineHeight = 44.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
         </div>
@@ -1133,6 +1176,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;40sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-headline-large": { "font-size": "32px", "line-height": "40px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.headlineLarge
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.headlineLarge
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 32.sp,
+    lineHeight = 40.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1146,6 +1203,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;36sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-headline-medium": { "font-size": "28px", "line-height": "36px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.headlineMedium
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.headlineMedium
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 28.sp,
+    lineHeight = 36.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1159,6 +1230,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;32sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-headline-small": { "font-size": "24px", "line-height": "32px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.headlineSmall
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.headlineSmall
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 24.sp,
+    lineHeight = 32.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
         </div>
@@ -1176,6 +1261,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;28sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-title-large": { "font-size": "22px", "line-height": "28px", "font-weight": 400 }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.titleLarge
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.titleLarge
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 22.sp,
+    lineHeight = 28.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1190,6 +1289,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.009&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-title-medium": { "font-size": "16px", "line-height": "24px", "font-weight": 500, "letter-spacing": "0.15px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.titleMedium
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.titleMedium
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 16.sp,
+    lineHeight = 24.sp,
+    fontWeight = FontWeight.Medium,
+    letterSpacing = 0.009.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1204,6 +1317,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.007&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-title-small": { "font-size": "14px", "line-height": "20px", "font-weight": 500, "letter-spacing": "0.1px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.titleSmall
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.titleSmall
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 14.sp,
+    lineHeight = 20.sp,
+    fontWeight = FontWeight.Medium,
+    letterSpacing = 0.007.em
+)</code></pre></div></div>
             </div>
           </div>
         </div>
@@ -1221,6 +1348,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:lineHeight"&gt;20sp&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-label-large": { "font-size": "14px", "line-height": "20px", "font-weight": 500 }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.labelLarge
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.labelLarge
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 14.sp,
+    lineHeight = 20.sp,
+    fontWeight = FontWeight.Medium,
+    letterSpacing = 0.007.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1235,6 +1376,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.042&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-label-medium": { "font-size": "12px", "line-height": "16px", "font-weight": 500, "letter-spacing": "0.5px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.labelMedium
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.labelMedium
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 12.sp,
+    lineHeight = 16.sp,
+    fontWeight = FontWeight.Medium,
+    letterSpacing = 0.042.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1249,6 +1404,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.045&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-label-small": { "font-size": "11px", "line-height": "16px", "font-weight": 500, "letter-spacing": "0.5px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.labelSmall
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.labelSmall
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 11.sp,
+    lineHeight = 16.sp,
+    fontWeight = FontWeight.Medium,
+    letterSpacing = 0.045.em
+)</code></pre></div></div>
             </div>
           </div>
         </div>
@@ -1267,6 +1436,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.031&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-body-large": { "font-size": "16px", "line-height": "24px", "font-weight": 400, "letter-spacing": "0.5px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.bodyLarge
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.bodyLarge
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 16.sp,
+    lineHeight = 24.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.031.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1281,6 +1464,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.018&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-body-medium": { "font-size": "14px", "line-height": "20px", "font-weight": 400, "letter-spacing": "0.25px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.bodyMedium
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.bodyMedium
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 14.sp,
+    lineHeight = 20.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.018.em
+)</code></pre></div></div>
             </div>
           </div>
           <div class="typo-scale-card roboto-card">
@@ -1295,6 +1492,20 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
   &lt;item name="android:letterSpacing"&gt;0.033&lt;/item&gt;
 &lt;/style&gt;</code></pre></div></div>
               <div class="tab-pane" data-tab="tokens"><div class="code-block"><div class="code-bar"><span>tokens.json</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>"md3-body-small": { "font-size": "12px", "line-height": "16px", "font-weight": 400, "letter-spacing": "0.4px" }</code></pre></div></div>
+              <div class="tab-pane" data-tab="compose"><div class="code-block"><div class="code-bar"><span>Compose</span><button class="copy-btn" onclick="copyBlock(this)">Copy</button></div><pre><code>// MaterialTheme.typography.bodySmall
+Text(
+    text = "Keep It Simple",
+    style = MaterialTheme.typography.bodySmall
+)
+
+// Or define manually:
+TextStyle(
+    fontFamily = FontFamily(Font(R.font.roboto)),
+    fontSize = 12.sp,
+    lineHeight = 16.sp,
+    fontWeight = FontWeight.Normal,
+    letterSpacing = 0.033.em
+)</code></pre></div></div>
             </div>
           </div>
         </div>
@@ -1483,5 +1694,6 @@ static let chicago500 = UIColor(hex: "#5C5550")</code></pre></div></div>
 
         </div>
       </div>
+
 </body>
 </html>
